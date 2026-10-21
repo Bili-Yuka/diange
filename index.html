@@ -160,10 +160,6 @@
 
   <div class="filter-panel">
     <div class="filter-row">
-      <span class="f-label">风格</span>
-      <div class="chips" id="styleChips"></div>
-    </div>
-    <div class="filter-row">
       <span class="f-label">筛选</span>
       <input class="search-input" id="qName" placeholder="搜曲名">
       <input class="search-input" id="qArtist" placeholder="搜原唱">
@@ -284,33 +280,6 @@
         rebuild();
       })
       .catch(function () { usingEmbed = true; rebuild(); });
-  }
-
-  /* ---------- 风格 chips ---------- */
-  function collectStyles() {
-    var set = {};
-    songs.forEach(function (s) { s.tags.forEach(function (t) { set[t] = true; }); });
-    return STYLE_ORDER.filter(function (t) { return set[t]; })
-      .concat(Object.keys(set).filter(function (t) { return STYLE_ORDER.indexOf(t) < 0; }));
-  }
-
-  function renderChips() {
-    var box = $("styleChips");
-    box.innerHTML = "";
-    var styles = collectStyles();
-    if (!styles.length) { return; }
-    styles.forEach(function (t) {
-      var b = document.createElement("button");
-      b.className = "chip" + (state.styles[t] ? " on" : "");
-      b.textContent = t;
-      b.type = "button";
-      b.addEventListener("click", function () {
-        state.styles[t] = !state.styles[t];
-        state.page = 1;
-        renderChips(); renderAll();
-      });
-      box.appendChild(b);
-    });
   }
 
   /* ---------- 筛选与排序 ---------- */
@@ -473,7 +442,7 @@
     $("btnReset").addEventListener("click", function () {
       state.qName = ""; state.qArtist = ""; state.lang = "全部"; state.sc = "全部"; state.styles = {}; state.sort = "default"; state.page = 1;
       $("qName").value = ""; $("qArtist").value = ""; $("qLang").value = "全部"; $("qSc").value = "全部"; $("qSort").value = "default";
-      renderChips(); renderAll();
+      renderAll();
     });
     $("qName").addEventListener("input", function () { state.qName = this.value; state.page = 1; renderAll(); });
     $("qArtist").addEventListener("input", function () { state.qArtist = this.value; state.page = 1; renderAll(); });
@@ -483,7 +452,7 @@
     $("pageSize").addEventListener("change", function () { state.pageSize = parseInt(this.value, 10); state.page = 1; renderAll(); });
   }
 
-  function rebuild() { renderChips(); renderAll(); }
+  function rebuild() { renderAll(); }
 
   bindEvents();
   loadData();
