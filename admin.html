@@ -87,14 +87,14 @@
   </header>
 
   <div class="notice">
-    <b>在线保存</b>：① 登录管理账号（服务地址 + 账号 + 密码向管理员索取）→ ② 导入 xlsx 或拉取线上歌单，增删改歌曲 → ③ 点"保存歌单"，网站约 1 分钟后自动更新，全程无需导出文件。
+    <b>在线保存</b>：① 登录管理账号（服务地址 + 账号 + 密码向管理员索取）→ ② 导入 xlsx 或拉取线上歌单，增删改歌曲 → ③ 点"保存歌单"，网站约 1 分钟后自动更新。
   </div>
 
   <div class="card">
     <h2>第 0 步 · 登录管理账号</h2>
-    <p class="sub">输入管理员提供的账号密码即可管理歌单（密码由管理员在后台服务里设置，不在网页代码中）。登录或保存失败时，先核对下方"后台服务地址"是否填对。</p>
+    <p class="sub">输入管理员提供的账号密码即可管理歌单。登录或保存失败时，先核对下方"后台服务地址"是否填对。</p>
     <div class="gh-row">
-      <label>后台服务地址（部署 Cloudflare Worker 后获得，见项目内 CLOUDFLARE_DEPLOY.md）</label>
+      <label>后台服务地址</label>
       <input class="input" id="apiUrl" placeholder="https://songbook-api.xxx.workers.dev">
     </div>
     <div class="gh-row">
@@ -118,7 +118,7 @@
     <h2>第 1 步 · 导入 Excel</h2>
     <p class="sub">支持 .xlsx / .xls，第一行须为表头。列建议：曲名、原唱、语种、SC点歌、标签（用 | 分隔多个）、歌切、备注。</p>
     <div class="drop" id="drop">
-      将 <b>songs.xlsx</b> 拖到这里，或 <b>点击选择文件</b><br>
+      将 <b>.xlsx/.xls</b> 拖到这里，或 <b>点击选择文件</b><br>
       <span id="fileHint" style="font-size:13px;"></span>
     </div>
     <input type="file" id="fileInput" accept=".xlsx,.xls" style="display:none">
