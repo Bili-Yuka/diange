@@ -7,7 +7,9 @@
 ```
 点歌歌单/
 ├── index.html        # 前台：歌单展示（翻页 / 搜索 / 筛选 / 随机点歌）
-├── admin.html        # 后台：导入 xlsx -> 预览编辑 -> 导出 songs.json
+├── admin.html        # 后台：账号密码登录 -> 导入 xlsx -> 预览编辑 -> 在线保存 / 导出 songs.json
+├── cloudflare-worker.js   # 账号密码后台的免费后端（部署见 CLOUDFLARE_DEPLOY.md）
+├── CLOUDFLARE_DEPLOY.md   # 让主播朋友用"账号密码"管理歌单的部署指南
 ├── data/
 │   ├── songs.json    # 前台实际读取的数据（后台导出后覆盖此文件）
 │   └── songs.xlsx    # 示例歌单（40 首），也是 xlsx 模板
@@ -59,6 +61,10 @@ git push github
 > 提示：如果直连 GitHub 超时（国内网络），推送时走系统代理：`git -c http.proxy=http://127.0.0.1:7890 push github`（端口按你本机代理实际端口改）。
 
 约 1 分钟后 GitHub Pages 自动发布，前台即更新。
+
+## 让主播朋友用"账号密码"管理（无需 GitHub 账号）
+
+后台页已支持账号密码登录：部署一个免费的 Cloudflare Worker（见 `CLOUDFLARE_DEPLOY.md`，含注册、粘贴代码、设置账号密码、生成 GitHub 令牌的全部步骤）后，朋友打开 `admin.html` → 输入你给的账号密码 → 拉取线上歌单 → 修改 → **保存歌单**，前台约 1 分钟自动更新，全程不碰 git、不需要 GitHub 账号。
 
 ## 字段说明
 

@@ -87,26 +87,30 @@
   </header>
 
   <div class="notice">
-    <b>在线保存（推荐）</b>：① 在下方连接 GitHub 并登录 → ② 导入 xlsx 或拉取线上歌单、增删改歌曲 → ③ 点"保存到 GitHub"，网站约 1 分钟后自动更新，全程无需导出文件。<br>
+    <b>在线保存（推荐）</b>：① 在下方向管理员索要"后台服务地址 + 账号 + 密码"并登录 → ② 导入 xlsx 或拉取线上歌单、增删改歌曲 → ③ 点"保存歌单"，网站约 1 分钟后自动更新，全程无需导出文件。<br>
     <b>本地导出（备选）</b>：导出 songs.json → 用文件覆盖仓库 data/songs.json 并 push，效果相同。
   </div>
 
   <div class="card">
-    <h2>第 0 步 · 连接 GitHub（在线保存）</h2>
-    <p class="sub">用你自己的 GitHub 账号登录（OAuth 设备授权，不会向本站暴露密码），保存时直接把歌单写回仓库。使用人需要在仓库里被加为协作者（Write 权限）。</p>
+    <h2>第 0 步 · 登录管理账号</h2>
+    <p class="sub">输入管理员提供的账号密码即可管理歌单（密码由管理员在后台服务里设置，不在网页代码中）。</p>
     <div class="gh-row">
-      <label>OAuth App 的 Client ID</label>
-      <input class="input" id="ghClientId" placeholder="在 github.com/settings/applications/new 创建应用后填写（创建方法见页尾说明）">
+      <label>后台服务地址（部署 Cloudflare Worker 后获得，见项目内 CLOUDFLARE_DEPLOY.md）</label>
+      <input class="input" id="apiUrl" placeholder="https://songbook-api.xxx.workers.dev">
     </div>
     <div class="gh-row">
-      <label>目标仓库</label>
-      <input class="input" id="ghRepo" value="Bili-Yuka/diange">
+      <label>账号</label>
+      <input class="input" id="loginUser" autocomplete="username">
+    </div>
+    <div class="gh-row">
+      <label>密码</label>
+      <input class="input" id="loginPass" type="password" autocomplete="current-password">
     </div>
     <div class="toolbar" style="margin-top:10px;">
-      <button class="btn btn-dark" id="btnGhLogin">登录 GitHub</button>
+      <button class="btn btn-dark" id="btnGhLogin">登录</button>
       <button class="btn" id="btnGhLogout" style="display:none;">退出登录</button>
       <button class="btn" id="btnGhLoad">拉取线上歌单</button>
-      <button class="btn btn-primary" id="btnGhSave">保存到 GitHub</button>
+      <button class="btn btn-primary" id="btnGhSave">保存歌单</button>
       <span id="ghStatus" class="gh-status"></span>
     </div>
   </div>
@@ -172,8 +176,8 @@
       <div class="step"><b>改了不生效？</b><span>确认导出的是 songs.json 且替换了仓库 data/songs.json，并已 git push（约 1 分钟后 GitHub Pages 自动发布）。</span></div>
       <div class="step"><b>SC点歌怎么写？</b><span>"免费" 表示免费点；填数字（如 50）表示需 50 SC。</span></div>
       <div class="step"><b>多个标签？</b><span>同一首歌多个风格用 | 分隔，如：流行|抒情。</span></div>
-      <div class="step"><b>Client ID 怎么来？</b><span>GitHub → 右上角头像 → Settings → Developer settings → OAuth Apps → New OAuth App，名称随意，Homepage URL 和 Callback URL 都填 https://Bili-Yuka.github.io/diange/，创建后复制 Client ID 填到上方（无需 Secret，也不会泄露密码）。</span></div>
-      <div class="step"><b>在线保存失败/403？</b><span>使用人（主播朋友）需要先有 GitHub 账号，且仓库所有者在该仓库 Settings → Collaborators 里把使用人加为协作者并给 Write 权限。</span></div>
+      <div class="step"><b>后台服务地址怎么来？</b><span>按项目里 CLOUDFLARE_DEPLOY.md 部署 Cloudflare Worker 后，会得到一个形如 https://songbook-api.xxx.workers.dev 的地址，填到上方"后台服务地址"即可。</span></div>
+      <div class="step"><b>登录失败/保存失败？</b><span>依次检查：① 后台服务地址是否填对；② Worker 环境变量 ADMIN_USER / ADMIN_PASS 是否设置；③ 保存报错时看 Worker 的 GITHUB_TOKEN 是否给了 diange 仓库 Contents 读写权限。</span></div>
     </div>
   </div>
 </div>
@@ -400,125 +404,78 @@
     setTimeout(function () { URL.revokeObjectURL(a.href); document.body.removeChild(a); }, 500);
   }
 
-  /* ---------- GitHub 在线保存（OAuth 设备流） ---------- */
+  /* ---------- 账号密码登录（经 Cloudflare Worker 代理读写 GitHub） ---------- */
   var GH = {
-    clientId: "",
-    repo: "Bili-Yuka/diange",
-    token: null
+    base: "",
+    token: null,
+    user: ""
   };
   try {
-    GH.clientId = localStorage.getItem("gh_client_id") || "";
-    GH.repo = localStorage.getItem("gh_repo") || "Bili-Yuka/diange";
-    GH.token = sessionStorage.getItem("gh_token") || null;
+    GH.base = localStorage.getItem("api_base") || "";
+    GH.token = sessionStorage.getItem("api_token") || null;
+    GH.user = sessionStorage.getItem("api_user") || "";
   } catch (e) {}
 
-  function b64encodeUtf8(text) {
-    return btoa(unescape(encodeURIComponent(text)));
-  }
-  function b64decodeUtf8(b64) {
-    try {
-      return decodeURIComponent(escape(atob(b64)));
-    } catch (e) {
-      var bin = atob(b64), bytes = new Uint8Array(bin.length);
-      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-      return new TextDecoder("utf-8").decode(bytes);
-    }
-  }
-  function ghHeaders() {
-    return { "Authorization": "Bearer " + GH.token, "Accept": "application/vnd.github+json" };
-  }
   function ghShowStatus(msg, ok) {
     var el = $("ghStatus");
     el.textContent = msg;
     el.className = "gh-status" + (ok ? " gh-ok" : "");
   }
-  function ghAfterLogin() {
-    fetch("https://api.github.com/user", { headers: ghHeaders() })
-      .then(function (r) { return r.json(); })
-      .then(function (me) {
-        if (me && me.login) {
-          ghShowStatus("已登录：" + me.login + "（" + me.name + "）", true);
-          $("btnGhLogin").textContent = "重新登录";
-          $("btnGhLogout").style.display = "";
-        }
-      })
-      .catch(function () { ghShowStatus("已登录（账号信息获取失败）", true); });
+  function ghApiHeaders() {
+    return { "Authorization": "Bearer " + GH.token, "Content-Type": "application/json" };
+  }
+  function ghBase() {
+    var b = $("apiUrl").value.trim().replace(/\/+$/, "");
+    if (!b) { toast("请填写后台服务地址（Worker URL）"); return ""; }
+    localStorage.setItem("api_base", b);
+    GH.base = b;
+    return b;
   }
   function ghLogin() {
-    var clientId = $("ghClientId").value.trim();
-    if (!clientId) { toast("请先在上方填写 OAuth App 的 Client ID"); return; }
-    localStorage.setItem("gh_client_id", clientId);
-    GH.clientId = clientId;
-    ghShowStatus("正在获取授权码…");
-    fetch("https://github.com/login/device/code", {
+    var base = ghBase();
+    if (!base) return;
+    var u = $("loginUser").value.trim();
+    var p = $("loginPass").value;
+    if (!u || !p) { toast("请输入账号和密码"); return; }
+    ghShowStatus("登录中…");
+    fetch(base + "/api/login", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
-      body: JSON.stringify({ client_id: clientId, scope: "public_repo" })
-    }).then(function (r) { return r.json(); }).then(function (code) {
-      if (code.error) { ghShowStatus("获取授权码失败：" + (code.error_description || code.error)); return; }
-      ghShowStatus("已弹出 GitHub 页面：请在其中输入授权码 " + code.user_code + "，等待确认授权…", false);
-      window.open(code.verification_uri, "_blank");
-      var steps = 0;
-      var timer = setInterval(function () {
-        steps++;
-        fetch("https://github.com/login/oauth/access_token", {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify({ client_id: clientId, device_code: code.device_code, grant_type: "urn:ietf:params:oauth:grant-type:device_code" })
-        }).then(function (r) { return r.json(); }).then(function (t) {
-          if (t.access_token) {
-            clearInterval(timer);
-            GH.token = t.access_token;
-            try { sessionStorage.setItem("gh_token", t.access_token); } catch (e) {}
-            ghAfterLogin();
-            toast("GitHub 登录成功");
-            return;
-          }
-          if (t.error === "expired_token" || t.error === "access_denied") {
-            clearInterval(timer);
-            ghShowStatus("授权失败或已取消，请重试");
-            return;
-          }
-          if (t.error === "slow_down") { steps++; }
-          if (steps > 120) {
-            clearInterval(timer);
-            ghShowStatus("授权超时，请重试");
-          }
-        });
-      }, 5000);
-    }).catch(function (err) { ghShowStatus("连接 GitHub 失败：" + err.message); });
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username: u, password: p })
+    }).then(function (r) { return r.json(); }).then(function (d) {
+      if (d && d.token) {
+        GH.token = d.token;
+        GH.user = u;
+        try { sessionStorage.setItem("api_token", d.token); sessionStorage.setItem("api_user", u); } catch (e) {}
+        ghShowStatus("已登录：" + u, true);
+        $("btnGhLogin").textContent = "重新登录";
+        $("btnGhLogout").style.display = "";
+        $("loginPass").value = "";
+        toast("登录成功");
+      } else {
+        ghShowStatus(d && d.error ? d.error : "登录失败");
+      }
+    }).catch(function (err) { ghShowStatus("连接后台服务失败：" + err.message); });
   }
   function ghLogout() {
     GH.token = null;
-    try { sessionStorage.removeItem("gh_token"); } catch (e) {}
+    GH.user = "";
+    try { sessionStorage.removeItem("api_token"); sessionStorage.removeItem("api_user"); } catch (e) {}
     ghShowStatus("未登录");
-    $("btnGhLogin").textContent = "登录 GitHub";
+    $("btnGhLogin").textContent = "登录";
     $("btnGhLogout").style.display = "none";
     toast("已退出登录");
   }
-  function ghRepo() {
-    var r = $("ghRepo").value.trim();
-    if (!r) { toast("请填写目标仓库（格式：用户名/仓库名）"); return ""; }
-    localStorage.setItem("gh_repo", r);
-    GH.repo = r;
-    return r;
-  }
   function ghLoadRemote() {
-    if (!GH.token) { toast("请先登录 GitHub"); return; }
-    var repo = ghRepo();
-    if (!repo) return;
+    if (!GH.token) { toast("请先登录"); return; }
+    var base = ghBase();
+    if (!base) return;
     ghShowStatus("正在拉取线上歌单…");
-    fetch("https://api.github.com/repos/" + repo + "/contents/data/songs.json", { headers: ghHeaders() })
-      .then(function (r) {
-        if (r.status === 404) { throw new Error("仓库里还没有 data/songs.json，请先在本地推送一次"); }
-        if (r.status === 403) { throw new Error("权限不足（HTTP 403）：你还没有该仓库的写权限，需被加为协作者"); }
-        if (!r.ok) { throw new Error("读取失败（HTTP " + r.status + "）"); }
-        return r.json();
-      })
+    fetch(base + "/api/songs", { headers: { "Authorization": "Bearer " + GH.token } })
+      .then(function (r) { return r.json(); })
       .then(function (d) {
-        GH.sha = d.sha;
-        var data = JSON.parse(b64decodeUtf8(d.content));
-        rows = (data.songs || []).map(function (s) {
+        if (d.error) { throw new Error(d.error); }
+        rows = (d.content.songs || []).map(function (s) {
           return {
             name: s.name || "", artist: s.artist || "", lang: s.lang || "",
             sc: String(s.sc == null ? "" : s.sc), tags: (s.tags || []).join("|"),
@@ -532,38 +489,23 @@
       .catch(function (err) { ghShowStatus(err.message); toast(err.message); });
   }
   function ghSave() {
-    if (!GH.token) { toast("请先登录 GitHub"); return; }
-    var repo = ghRepo();
-    if (!repo) return;
-    var text = JSON.stringify(buildJson(), null, 2);
+    if (!GH.token) { toast("请先登录"); return; }
+    var base = ghBase();
+    if (!base) return;
     ghShowStatus("正在保存…");
-    fetch("https://api.github.com/repos/" + repo + "/contents/data/songs.json", { headers: ghHeaders() })
-      .then(function (r) {
-        if (r.status === 404) { throw new Error("仓库里没有 data/songs.json，请先在本地推送一次"); }
-        if (r.status === 403) { throw new Error("权限不足（HTTP 403）：你还没有该仓库的写权限，需被加为协作者"); }
-        if (!r.ok) { throw new Error("读取失败（HTTP " + r.status + "）"); }
-        return r.json();
-      })
-      .then(function (d) {
-        return fetch("https://api.github.com/repos/" + repo + "/contents/data/songs.json", {
-          method: "PUT",
-          headers: Object.assign({ "Content-Type": "application/json" }, ghHeaders()),
-          body: JSON.stringify({ message: "更新歌单（网页后台）", content: b64encodeUtf8(text), sha: d.sha })
-        });
-      })
-      .then(function (put) {
-        if (put.status === 200 || put.status === 201) {
-          ghShowStatus("已保存成功！网站约 1 分钟后自动更新", true);
-          toast("已保存！网站约 1 分钟后自动更新");
-        } else if (put.status === 403) {
-          ghShowStatus("保存失败：权限不足，需被加为协作者");
-        } else if (put.status === 422) {
-          ghShowStatus("保存失败：文件刚被他人修改，请重试");
-        } else {
-          ghShowStatus("保存失败（HTTP " + put.status + "）");
-        }
-      })
-      .catch(function (err) { ghShowStatus(err.message); toast(err.message); });
+    fetch(base + "/api/songs", {
+      method: "PUT",
+      headers: ghApiHeaders(),
+      body: JSON.stringify({ songs: buildJson().songs })
+    }).then(function (r) { return r.json(); }).then(function (d) {
+      if (d && d.ok) {
+        ghShowStatus("已保存成功！网站约 1 分钟后自动更新", true);
+        toast("已保存！网站约 1 分钟后自动更新");
+      } else {
+        ghShowStatus(d && d.error ? d.error : "保存失败");
+        toast(d && d.error ? d.error : "保存失败");
+      }
+    }).catch(function (err) { ghShowStatus("保存失败：" + err.message); });
   }
 
   /* ---------- 事件绑定 ---------- */
@@ -626,14 +568,18 @@
 
   bindEditEvents();
 
-  /* GitHub 在线保存 - 事件绑定与初始化 */
+  /* 账号登录 - 事件绑定与初始化 */
   $("btnGhLogin").addEventListener("click", ghLogin);
   $("btnGhLogout").addEventListener("click", ghLogout);
   $("btnGhLoad").addEventListener("click", ghLoadRemote);
   $("btnGhSave").addEventListener("click", ghSave);
-  $("ghClientId").value = GH.clientId;
-  $("ghRepo").value = GH.repo;
-  if (GH.token) { ghAfterLogin(); }
+  $("apiUrl").value = GH.base;
+  $("loginUser").value = GH.user;
+  if (GH.token) {
+    ghShowStatus("已登录：" + (GH.user || "管理账号"), true);
+    $("btnGhLogin").textContent = "重新登录";
+    $("btnGhLogout").style.display = "";
+  }
 })();
 </script>
 </body>
