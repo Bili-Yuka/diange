@@ -1,9 +1,9 @@
 # 一键部署到 GitHub Pages
 # 用法：powershell -ExecutionPolicy Bypass -File .\deploy.ps1 -UserName "你的GitHub用户名"
-# 可选：-RepoName "singer-songlist"（默认），-Branch "main"
+# 可选：-RepoName "diange"（默认），-Branch "main"
 param(
   [Parameter(Mandatory = $true)][string]$UserName,
-  [string]$RepoName = "singer-songlist",
+  [string]$RepoName = "diange",
   [string]$Branch = "main"
 )
 $ErrorActionPreference = "Stop"
