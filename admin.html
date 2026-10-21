@@ -87,13 +87,12 @@
   </header>
 
   <div class="notice">
-    <b>在线保存（推荐）</b>：① 在下方向管理员索要"后台服务地址 + 账号 + 密码"并登录 → ② 导入 xlsx 或拉取线上歌单、增删改歌曲 → ③ 点"保存歌单"，网站约 1 分钟后自动更新，全程无需导出文件。<br>
-    <b>本地导出（备选）</b>：导出 songs.json → 用文件覆盖仓库 data/songs.json 并 push，效果相同。
+    <b>在线保存</b>：① 登录管理账号（服务地址 + 账号 + 密码向管理员索取）→ ② 导入 xlsx 或拉取线上歌单，增删改歌曲 → ③ 点"保存歌单"，网站约 1 分钟后自动更新，全程无需导出文件。
   </div>
 
   <div class="card">
     <h2>第 0 步 · 登录管理账号</h2>
-    <p class="sub">输入管理员提供的账号密码即可管理歌单（密码由管理员在后台服务里设置，不在网页代码中）。</p>
+    <p class="sub">输入管理员提供的账号密码即可管理歌单（密码由管理员在后台服务里设置，不在网页代码中）。登录或保存失败时，先核对下方"后台服务地址"是否填对。</p>
     <div class="gh-row">
       <label>后台服务地址（部署 Cloudflare Worker 后获得，见项目内 CLOUDFLARE_DEPLOY.md）</label>
       <input class="input" id="apiUrl" placeholder="https://songbook-api.xxx.workers.dev">
@@ -155,34 +154,12 @@
     </div>
     <div class="toolbar">
       <button class="btn" id="btnAddRow">＋ 新增一行</button>
+      <button class="btn" id="btnExportXlsx">导出 songs.xlsx（备份）</button>
       <span class="count" id="editCount"></span>
     </div>
   </div>
 
-  <div class="card" id="exportCard" hidden>
-    <h2>第 4 步 · 导出更新数据</h2>
-    <p class="sub">导出后把 songs.json 覆盖到仓库 data/songs.json 并推送，前台即更新。</p>
-    <div class="toolbar">
-      <button class="btn btn-dark" id="btnExportJson">导出 songs.json（推荐）</button>
-      <button class="btn" id="btnExportXlsx">导出 songs.xlsx（备份用）</button>
-      <button class="btn" id="btnCopyJson">复制 JSON</button>
-    </div>
-    <pre class="out" id="jsonPreview"></pre>
-  </div>
-
-  <div class="card">
-    <h2>常见问题</h2>
-    <div class="steps">
-      <div class="step"><b>改了不生效？</b><span>确认导出的是 songs.json 且替换了仓库 data/songs.json，并已 git push（约 1 分钟后 GitHub Pages 自动发布）。</span></div>
-      <div class="step"><b>SC点歌怎么写？</b><span>"免费" 表示免费点；填数字（如 50）表示需 50 SC。</span></div>
-      <div class="step"><b>多个标签？</b><span>同一首歌多个风格用 | 分隔，如：流行|抒情。</span></div>
-      <div class="step"><b>后台服务地址怎么来？</b><span>按项目里 CLOUDFLARE_DEPLOY.md 部署 Cloudflare Worker 后，会得到一个形如 https://songbook-api.xxx.workers.dev 的地址，填到上方"后台服务地址"即可。</span></div>
-      <div class="step"><b>登录失败/保存失败？</b><span>依次检查：① 后台服务地址是否填对；② Worker 环境变量 ADMIN_USER / ADMIN_PASS 是否设置；③ 保存报错时看 Worker 的 GITHUB_TOKEN 是否给了 diange 仓库 Contents 读写权限。</span></div>
-    </div>
-  </div>
-</div>
-
-<div class="toast" id="toast"></div>
+  <div class="toast" id="toast"></div>
 
 <script>
 (function () {
@@ -352,7 +329,6 @@
     });
     $("editCount").textContent = "共 " + rows.length + " 首";
     showCard($("editCard"), true);
-    showCard($("exportCard"), true);
   }
 
   function bindEditEvents() {
@@ -519,25 +495,6 @@
     }
   });
 
-  $("btnExportJson").addEventListener("click", function () {
-    var data = buildJson();
-    var text = JSON.stringify(data, null, 2);
-    download("songs.json", text, "application/json");
-    $("jsonPreview").textContent = text;
-    $("jsonPreview").style.display = "block";
-    toast("已导出 songs.json，请覆盖仓库 data/songs.json 后推送");
-  });
-  $("btnCopyJson").addEventListener("click", function () {
-    var text = JSON.stringify(buildJson(), null, 2);
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function () { toast("JSON 已复制到剪贴板"); }, function () { toast("复制失败，请手动选择"); });
-    } else {
-      var ta = document.createElement("textarea");
-      ta.value = text; document.body.appendChild(ta); ta.select();
-      try { document.execCommand("copy"); toast("JSON 已复制到剪贴板"); } catch (e) { toast("复制失败，请手动选择"); }
-      document.body.removeChild(ta);
-    }
-  });
   $("btnExportXlsx").addEventListener("click", function () {
     loadSheetJS(function () {
       try {
