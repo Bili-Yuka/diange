@@ -49,8 +49,7 @@ try {
   Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/$UserName/$RepoName" -Headers $Headers | Out-Null
   $repoExists = $true
 } catch {
-  if ($_.Exception.Response -and [int]$_.Exception.Response.StatusCode -eq 404) { $repoExists = $false }
-  else { throw }
+  if ($_.Exception.Response -and [int]$_.Exception.Response.StatusCode -eq 404) { $repoExists = $false } else { throw }
 }
 
 if (-not $repoExists) {
@@ -65,6 +64,7 @@ Write-Host "== 4/5 推送到 GitHub ==" -ForegroundColor Cyan
 git remote remove github 2>$null | Out-Null
 $AuthUrl = "https://$UserName`:$Pat@github.com/$UserName/$RepoName.git"
 git push "$AuthUrl" "HEAD:$Branch" 2>&1 | Out-Null
+if ($LASTEXITCODE -ne 0) { Write-Host "推送失败：请检查令牌是否有效、网络是否可达" -ForegroundColor Red; exit 1 }
 git remote add github "https://github.com/$UserName/$RepoName.git"
 Write-Host "已推送 $Branch 分支；远程地址已改为不带令牌的形式"
 
@@ -76,8 +76,7 @@ try {
 } catch {
   $code = 0
   if ($_.Exception.Response) { $code = [int]$_.Exception.Response.StatusCode }
-  if ($code -eq 409) { Write-Host "Pages 已存在，无需重复开启" -ForegroundColor Yellow }
-  else { Write-Host "自动开启 Pages 未成功（HTTP $code），请手动到仓库 Settings -> Pages 选择 Deploy from a branch -> $Branch / (root)" -ForegroundColor Yellow }
+  if ($code -eq 409) { Write-Host "Pages 已存在，无需重复开启" -ForegroundColor Yellow } else { Write-Host "自动开启 Pages 未成功（HTTP $code），请手动到仓库 Settings -> Pages 选择 Deploy from a branch -> $Branch / (root)" -ForegroundColor Yellow }
 }
 
 $SiteUrl = "https://$UserName.github.io/$RepoName/"
