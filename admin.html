@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>歌单后台管理</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23111827'/%3E%3Cpath d='M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41L9.25 5.35C8.66 5.59 8.12 5.92 7.63 6.29L5.24 5.33c-.22-.08-.47 0-.59.22L2.74 8.87C2.62 9.08 2.66 9.34 2.86 9.48l2.03 1.58C4.84 11.36 4.8 11.69 4.8 12s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --accent: #e0353b; --accent-dark: #c12a30;
+    --ink: #1f2937; --ink-2: #6b7280; --line: #e5e7eb;
+    --bg-soft: #f9fafb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    background: var(--bg-soft); color: var(--ink); font-size: 14px; line-height: 1.6;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 16px 16px 48px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 4px 6px; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand .logo { width: 34px; height: 34px; border-radius: 9px; background: #111827; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 17px; flex: none; }
+  .brand h1 { margin: 0; font-size: 20px; font-weight: 700; }
+  .btn {
+    border: 1px solid var(--line); background: #fff; color: var(--ink);
+    padding: 7px 14px; border-radius: 8px; font-size: 14px; cursor: pointer; font-family: inherit;
+  }
+  .btn:hover { background: var(--bg-soft); }
+  .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .btn-primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+  .btn-dark { background: #111827; border-color: #111827; color: #fff; font-weight: 600; }
+  .btn-dark:hover { background: #1f2937; }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 14px 0; }
+  .card h2 { margin: 0 0 4px; font-size: 16px; }
+  .card .sub { margin: 0 0 12px; color: var(--ink-2); font-size: 13px; }
+  .drop {
+    border: 2px dashed var(--line); border-radius: 12px; padding: 34px 16px; text-align: center;
+    color: var(--ink-2); cursor: pointer; transition: border-color .15s, background .15s; background: var(--bg-soft);
+  }
+  .drop.drag { border-color: var(--accent); background: #fef2f2; }
+  .drop b { color: var(--ink); }
+  .mapping { display: flex; flex-wrap: wrap; gap: 10px; }
+  .mapping-item { flex: 1 1 150px; }
+  .mapping-item label { display: block; font-size: 13px; color: var(--ink-2); margin-bottom: 4px; }
+  .select, .input {
+    border: 1px solid var(--line); border-radius: 8px; padding: 6px 9px; font-size: 14px;
+    font-family: inherit; background: #fff; color: var(--ink); width: 100%;
+  }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 14px; }
+  .table-shell { overflow-x: auto; margin-top: 12px; }
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; min-width: 860px; }
+  th { background: var(--bg-soft); border-bottom: 1px solid var(--line); padding: 8px 8px; text-align: left; font-weight: 600; font-size: 13px; color: var(--ink-2); white-space: nowrap; }
+  td { padding: 5px 8px; border-bottom: 1px solid #f3f4f6; }
+  td .input { padding: 4px 8px; font-size: 13px; }
+  .del-row { color: var(--accent); border: none; background: none; cursor: pointer; font-size: 13px; font-family: inherit; padding: 4px 6px; }
+  .del-row:hover { text-decoration: underline; }
+  .count { color: var(--ink-2); font-size: 13px; }
+  .steps { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .step { flex: 1 1 200px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: var(--bg-soft); }
+  .step b { display: block; margin-bottom: 2px; }
+  .step span { color: var(--ink-2); font-size: 13px; }
+  .notice { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 9px 14px; border-radius: 10px; font-size: 13px; }
+  .toast {
+    position: fixed; left: 50%; bottom: 32px; transform: translateX(-50%);
+    background: #111827; color: #fff; padding: 10px 18px; border-radius: 10px; font-size: 14px;
+    opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 99; max-width: 84vw;
+    box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  }
+  .toast.show { opacity: 1; }
+  pre.out { background: #0f172a; color: #d1d5db; padding: 12px; border-radius: 10px; overflow: auto; max-height: 240px; font-size: 12px; display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41L9.25 5.35C8.66 5.59 8.12 5.92 7.63 6.29L5.24 5.33c-.22-.08-.47 0-.59.22L2.74 8.87C2.62 9.08 2.66 9.34 2.86 9.48l2.03 1.58C4.84 11.36 4.8 11.69 4.8 12s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg></div>
+      <div><h1>歌单后台管理</h1></div>
+    </div>
+    <button class="btn" onclick="location.href='index.html'">返回前台</button>
+  </header>
+
+  <div class="notice">
+    更新流程：① 在本页导入 xlsx → ② 核对字段映射、增删改歌曲 → ③ 导出 songs.json → ④ 用导出的文件覆盖仓库里的 data/songs.json 并 push，网站自动更新（GitHub Pages 分支部署，约 1 分钟生效）。
+  </div>
+
+  <div class="card">
+    <h2>第 1 步 · 导入 Excel</h2>
+    <p class="sub">支持 .xlsx / .xls，第一行须为表头。列建议：曲名、原唱、语种、SC点歌、标签（用 | 分隔多个）、歌切、备注。</p>
+    <div class="drop" id="drop">
+      将 <b>songs.xlsx</b> 拖到这里，或 <b>点击选择文件</b><br>
+      <span id="fileHint" style="font-size:13px;"></span>
+    </div>
+    <input type="file" id="fileInput" accept=".xlsx,.xls" style="display:none">
+    <div class="toolbar" id="importToolbar" hidden>
+      <span class="count" id="importInfo"></span>
+      <button class="btn btn-primary" id="btnUseTemplate">没有表格？下载示例模板</button>
+    </div>
+  </div>
+
+  <div class="card" id="mapCard" hidden>
+    <h2>第 2 步 · 核对字段映射</h2>
+    <p class="sub">把 Excel 里的每一列对应到歌单字段（可手动调整；不用的列选"忽略"）。</p>
+    <div class="mapping" id="mappingBox"></div>
+    <div class="toolbar">
+      <button class="btn btn-primary" id="btnApply">应用映射并预览</button>
+    </div>
+  </div>
+
+  <div class="card" id="editCard" hidden>
+    <h2>第 3 步 · 预览与编辑</h2>
+    <p class="sub">直接修改表格内容即可；新增行在末尾追加，删除用行尾的"删"。</p>
+    <div class="table-shell">
+      <table>
+        <colgroup>
+          <col style="width:34px"><col style="width:18%"><col style="width:14%"><col style="width:9%">
+          <col style="width:12%"><col style="width:20%"><col style="width:9%"><col style="width:18%">
+        </colgroup>
+        <thead>
+          <tr><th></th><th>曲名</th><th>原唱</th><th>语种</th><th>SC点歌</th><th>标签（| 分隔）</th><th>歌切</th><th>备注</th></tr>
+        </thead>
+        <tbody id="editBody"></tbody>
+      </table>
+    </div>
+    <div class="toolbar">
+      <button class="btn" id="btnAddRow">＋ 新增一行</button>
+      <span class="count" id="editCount"></span>
+    </div>
+  </div>
+
+  <div class="card" id="exportCard" hidden>
+    <h2>第 4 步 · 导出更新数据</h2>
+    <p class="sub">导出后把 songs.json 覆盖到仓库 data/songs.json 并推送，前台即更新。</p>
+    <div class="toolbar">
+      <button class="btn btn-dark" id="btnExportJson">导出 songs.json（推荐）</button>
+      <button class="btn" id="btnExportXlsx">导出 songs.xlsx（备份用）</button>
+      <button class="btn" id="btnCopyJson">复制 JSON</button>
+    </div>
+    <pre class="out" id="jsonPreview"></pre>
+  </div>
+
+  <div class="card">
+    <h2>常见问题</h2>
+    <div class="steps">
+      <div class="step"><b>改了不生效？</b><span>确认导出的是 songs.json 且替换了仓库 data/songs.json，并已 git push（约 1 分钟后 GitHub Pages 自动发布）。</span></div>
+      <div class="step"><b>SC点歌怎么写？</b><span>"免费" 表示免费点；填数字（如 50）表示需 50 SC。</span></div>
+      <div class="step"><b>多个标签？</b><span>同一首歌多个风格用 | 分隔，如：流行|抒情。</span></div>
+      <div class="step"><b>不想用 Excel？</b><span>可以直接编辑 data/songs.json 里的 songs 数组，结构照抄即可。</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var FIELDS = [
+    { key: "name", label: "曲名", aliases: ["曲名", "歌名", "歌曲", "title", "歌名/歌手"] },
+    { key: "artist", label: "原唱", aliases: ["原唱", "歌手", "演唱"] },
+    { key: "lang", label: "语种", aliases: ["语种", "语言"] },
+    { key: "sc", label: "SC点歌", aliases: ["sc点歌", "sc", "点歌价格", "价格"] },
+    { key: "tags", label: "标签", aliases: ["标签", "风格", "类型"] },
+    { key: "cut", label: "歌切", aliases: ["歌切", "切歌"] },
+    { key: "note", label: "备注", aliases: ["备注", "说明"] }
+  ];
+  var SAMPLE_FILE = "data/songs.xlsx";
+
+  var $ = function (id) { return document.getElementById(id); };
+  var rows = [];        // [{name,artist,lang,sc,tags,cut,note}]
+  var mapping = {};     // excelColIndex -> fieldKey
+  var sheetHeaders = [];
+  var lastRawBody = []; // 最近一次导入的原始数据行，供“应用映射”重建
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+  var toastTimer = null;
+  function toast(msg) {
+    var t = $("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2400);
+  }
+
+  /* ---------- SheetJS 加载（jsDelivr 优先，cdnjs 兜底） ---------- */
+  function loadSheetJS(onReady) {
+    if (window.XLSX) { onReady(); return; }
+    var urls = [
+      "https://fastly.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+    ];
+    var i = 0;
+    (function next() {
+      if (i >= urls.length) { toast("Excel 解析库加载失败，请检查网络后重试"); return; }
+      var s = document.createElement("script");
+      s.src = urls[i++];
+      s.onload = function () { window.XLSX ? onReady() : next(); };
+      s.onerror = next;
+      document.head.appendChild(s);
+    })();
+  }
+
+  /* ---------- 拖拽 / 选择文件 ---------- */
+  var drop = $("drop"), fileInput = $("fileInput");
+  drop.addEventListener("click", function () { fileInput.click(); });
+  drop.addEventListener("dragover", function (e) { e.preventDefault(); drop.classList.add("drag"); });
+  drop.addEventListener("dragleave", function () { drop.classList.remove("drag"); });
+  drop.addEventListener("drop", function (e) {
+    e.preventDefault();
+    drop.classList.remove("drag");
+    if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+  });
+  fileInput.addEventListener("change", function () { if (fileInput.files.length) handleFile(fileInput.files[0]); });
+
+  function handleFile(file) {
+    $("fileHint").textContent = file.name + "（" + (file.size / 1024).toFixed(1) + " KB）";
+    loadSheetJS(function () {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          var wb = XLSX.read(e.target.result, { type: "array" });
+          var ws = wb.Sheets[wb.SheetNames[0]];
+          var data = XLSX.utils.sheet_to_json(ws, { header: 1, defval: "" });
+          if (!data.length) { toast("表格是空的"); return; }
+          sheetHeaders = data[0].map(String).map(function (h) { return h.trim(); });
+          var body = data.slice(1).filter(function (r) { return r.some(function (v) { return String(v).trim() !== ""; }); });
+          lastRawBody = body;
+          initMapping(sheetHeaders);
+          rawToRows(body);
+          $("importToolbar").hidden = false;
+          $("importInfo").textContent = "已读取 " + body.length + " 行数据（含表头 " + sheetHeaders.length + " 列）";
+          showCard($("mapCard"), true);
+          toast("解析成功，请核对字段映射");
+        } catch (err) {
+          toast("解析失败：" + err.message);
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    });
+  }
+
+  /* ---------- 字段映射 ---------- */
+  function matchField(header) {
+    var h = header.toLowerCase().replace(/[\s_\-]/g, "");
+    for (var i = 0; i < FIELDS.length; i++) {
+      var f = FIELDS[i];
+      if (f.aliases.some(function (a) { return h.indexOf(a.toLowerCase().replace(/[\s_\-]/g, "")) >= 0 || a.toLowerCase().replace(/[\s_\-]/g, "") === h; })) {
+        return f.key;
+      }
+    }
+    return "";
+  }
+  function initMapping(headers) {
+    mapping = {};
+    headers.forEach(function (h, idx) { mapping[idx] = matchField(h); });
+  }
+  function showCard(el, show) { el.hidden = !show; }
+
+  function renderMapping() {
+    var box = $("mappingBox");
+    box.innerHTML = "";
+    sheetHeaders.forEach(function (h, idx) {
+      var wrap = document.createElement("div");
+      wrap.className = "mapping-item";
+      var lab = document.createElement("label");
+      lab.textContent = "列 " + (idx + 1) + "：" + h;
+      var sel = document.createElement("select");
+      sel.className = "select";
+      var opts = [{ key: "", label: "忽略" }].concat(FIELDS);
+      opts.forEach(function (o) {
+        var op = document.createElement("option");
+        op.value = o.key;
+        op.textContent = o.label;
+        if (o.key === mapping[idx]) op.selected = true;
+        sel.appendChild(op);
+      });
+      sel.addEventListener("change", function () { mapping[idx] = sel.value; });
+      wrap.appendChild(lab); wrap.appendChild(sel);
+      box.appendChild(wrap);
+    });
+  }
+
+  /* ---------- 数据行 ---------- */
+  function rawToRows(body) {
+    rows = [];
+    body.forEach(function (r) {
+      var song = { name: "", artist: "", lang: "", sc: "免费", tags: "", cut: "", note: "" };
+      sheetHeaders.forEach(function (h, idx) {
+        var key = mapping[idx];
+        if (!key) return;
+        song[key] = String(r[idx] == null ? "" : r[idx]).trim();
+      });
+      rows.push(song);
+    });
+    renderEdit();
+  }
+
+  function renderEdit() {
+    var tb = $("editBody");
+    tb.innerHTML = "";
+    rows.forEach(function (song, i) {
+      var tr = document.createElement("tr");
+      var tds = [
+        '<td><button class="del-row" data-i="' + i + '" type="button">删</button></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="name" value="' + esc(song.name) + '"></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="artist" value="' + esc(song.artist) + '"></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="lang" value="' + esc(song.lang) + '"></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="sc" value="' + esc(song.sc) + '"></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="tags" value="' + esc(song.tags) + '"></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="cut" value="' + esc(song.cut) + '"></td>',
+        '<td><input class="input" data-i="' + i + '" data-f="note" value="' + esc(song.note) + '"></td>'
+      ].join("");
+      tr.innerHTML = tds;
+      tb.appendChild(tr);
+    });
+    $("editCount").textContent = "共 " + rows.length + " 首";
+    showCard($("editCard"), true);
+    showCard($("exportCard"), true);
+  }
+
+  function bindEditEvents() {
+    $("editBody").addEventListener("input", function (e) {
+      var t = e.target;
+      if (t.classList && t.classList.contains("input") && t.dataset.i != null) {
+        rows[parseInt(t.dataset.i, 10)][t.dataset.f] = t.value;
+      }
+    });
+    $("editBody").addEventListener("click", function (e) {
+      var b = e.target;
+      if (b.classList && b.classList.contains("del-row")) {
+        rows.splice(parseInt(b.dataset.i, 10), 1);
+        renderEdit();
+        toast("已删除该行");
+      }
+    });
+    $("btnAddRow").addEventListener("click", function () {
+      rows.push({ name: "", artist: "", lang: "国语", sc: "免费", tags: "", cut: "无", note: "" });
+      renderEdit();
+      toast("已新增一行");
+    });
+  }
+
+  /* ---------- 导出 ---------- */
+  function buildJson() {
+    var out = rows.filter(function (s) { return s.name.trim(); }).map(function (s) {
+      var tags = [];
+      if (s.tags) tags = s.tags.split(/[|｜,，]/).map(function (x) { return x.trim(); }).filter(Boolean);
+      return {
+        name: s.name.trim(),
+        artist: s.artist.trim(),
+        lang: s.lang.trim(),
+        sc: s.sc.trim() || "免费",
+        tags: tags,
+        cut: s.cut.trim(),
+        note: s.note.trim()
+      };
+    });
+    return { songs: out };
+  }
+  function download(filename, text, mime) {
+    var blob = new Blob([text], { type: mime || "application/octet-stream" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); document.body.removeChild(a); }, 500);
+  }
+
+  /* ---------- 事件绑定 ---------- */
+  $("btnApply").addEventListener("click", function () {
+    if (lastRawBody && lastRawBody.length) {
+      rawToRows(lastRawBody);
+      renderMapping();
+      toast("已按当前映射重新生成预览");
+    } else {
+      toast("请先导入 Excel 文件");
+    }
+  });
+
+  $("btnExportJson").addEventListener("click", function () {
+    var data = buildJson();
+    var text = JSON.stringify(data, null, 2);
+    download("songs.json", text, "application/json");
+    $("jsonPreview").textContent = text;
+    $("jsonPreview").style.display = "block";
+    toast("已导出 songs.json，请覆盖仓库 data/songs.json 后推送");
+  });
+  $("btnCopyJson").addEventListener("click", function () {
+    var text = JSON.stringify(buildJson(), null, 2);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast("JSON 已复制到剪贴板"); }, function () { toast("复制失败，请手动选择"); });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); toast("JSON 已复制到剪贴板"); } catch (e) { toast("复制失败，请手动选择"); }
+      document.body.removeChild(ta);
+    }
+  });
+  $("btnExportXlsx").addEventListener("click", function () {
+    loadSheetJS(function () {
+      try {
+        var data = buildJson();
+        var aoa = [["曲名", "原唱", "语种", "SC点歌", "标签", "歌切", "备注"]];
+        data.songs.forEach(function (s) {
+          aoa.push([s.name, s.artist, s.lang, s.sc, s.tags.join("|"), s.cut, s.note]);
+        });
+        var ws = XLSX.utils.aoa_to_sheet(aoa);
+        ws["!cols"] = [{wch:16},{wch:14},{wch:8},{wch:10},{wch:20},{wch:8},{wch:14}];
+        var wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "歌单");
+        XLSX.writeFile(wb, "songs.xlsx");
+        toast("已导出 songs.xlsx");
+      } catch (err) {
+        toast("导出失败：" + err.message);
+      }
+    });
+  });
+  $("btnUseTemplate").addEventListener("click", function () {
+    var a = document.createElement("a");
+    a.href = SAMPLE_FILE;
+    a.download = "songs.xlsx";
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a);
+    toast("已开始下载示例模板 songs.xlsx");
+  });
+
+  bindEditEvents();
+})();
+</script>
+</body>
+</html>
