@@ -154,6 +154,7 @@
     </div>
     <div class="toolbar">
       <button class="btn" id="btnAddRow">＋ 新增一行</button>
+      <button class="btn btn-primary" id="btnGhSaveEdit">保存歌单</button>
       <button class="btn" id="btnExportXlsx">导出 songs.xlsx（备份）</button>
       <span class="count" id="editCount"></span>
     </div>
@@ -530,6 +531,7 @@
   $("btnGhLogout").addEventListener("click", ghLogout);
   $("btnGhLoad").addEventListener("click", ghLoadRemote);
   $("btnGhSave").addEventListener("click", ghSave);
+  $("btnGhSaveEdit").addEventListener("click", ghSave);
   $("apiUrl").value = GH.base;
   $("loginUser").value = GH.user;
   if (GH.token) {
