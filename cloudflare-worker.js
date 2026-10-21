@@ -7,7 +7,7 @@
 //   SESSION_SECRET 会话签名密钥（任意长随机字符串）
 //   GITHUB_TOKEN   有 diange 仓库 Contents 读写权限的 PAT
 //   GITHUB_REPO    仓库，例如 Bili-Yuka/diange
-
+//
 function b64(s) {
   return btoa(unescape(encodeURIComponent(s)));
 }
@@ -59,6 +59,7 @@ export default {
       var opts = {
         method: method,
         headers: {
+          "User-Agent": "song-manage-worker",
           "Authorization": "Bearer " + env.GITHUB_TOKEN,
           "Accept": "application/vnd.github+json"
         }
