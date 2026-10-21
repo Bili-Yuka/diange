@@ -276,7 +276,7 @@
     fetch(url, { cache: "no-store" })
       .then(function (res) { if (!res.ok) throw new Error("http " + res.status); return res.json(); })
       .then(function (j) {
-        var list = normalize(j.songs || []);
+        var list = normalize(Array.isArray(j) ? j : (j.songs || []));
         if (!list.length) throw new Error("empty");
         songs = list;
         usingEmbed = false;

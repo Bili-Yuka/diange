@@ -124,7 +124,7 @@ export default {
       var cur = await g2.json();
       var put = await gh("PUT", "/repos/" + env.GITHUB_REPO + "/contents/data/songs.json", {
         message: "更新歌单（账号密码后台）",
-        content: b64(JSON.stringify(body.songs, null, 2)),
+        content: b64(JSON.stringify({ songs: body.songs }, null, 2)),
         sha: cur.sha
       });
       if (put.status === 200 || put.status === 201) {

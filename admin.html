@@ -452,7 +452,7 @@
       .then(function (r) { return r.json(); })
       .then(function (d) {
         if (d.error) { throw new Error(d.error); }
-        rows = (d.content.songs || []).map(function (s) {
+        rows = ((Array.isArray(d.content) ? d.content : (d.content.songs || []))).map(function (s) {
           return {
             name: s.name || "", artist: s.artist || "", lang: s.lang || "",
             sc: String(s.sc == null ? "" : s.sc), tags: (s.tags || []).join("|"),
