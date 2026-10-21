@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>主播点歌歌单</title>
+<title>柚夏yuka的点歌歌单</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23e0353b'/%3E%3Cpath d='M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3H12z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
   :root {
@@ -148,7 +148,7 @@
     <div class="brand">
       <div class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3H12z"/></svg></div>
       <div>
-        <h1>主播点歌歌单</h1>
+        <h1>柚夏yuka的点歌歌单</h1>
         <small>点击曲名左侧的点歌按钮即可复制</small>
       </div>
     </div>
@@ -298,7 +298,7 @@
     var box = $("styleChips");
     box.innerHTML = "";
     var styles = collectStyles();
-    if (!styles.length) { box.innerHTML = '<span class="f-label">（无标签数据）</span>'; return; }
+    if (!styles.length) { return; }
     styles.forEach(function (t) {
       var b = document.createElement("button");
       b.className = "chip" + (state.styles[t] ? " on" : "");
@@ -466,7 +466,8 @@
     $("btnRandom").addEventListener("click", function () {
       if (!songs.length) return;
       var s = songs[Math.floor(Math.random() * songs.length)];
-      toast("随机点歌：" + s.name + " - " + s.artist);
+      toast("随机点歌：" + s.name);
+      copyText(s.name);
     });
     $("btnQuery").addEventListener("click", function () { state.page = 1; renderAll(); });
     $("btnReset").addEventListener("click", function () {
