@@ -56,6 +56,8 @@ git commit -m "更新歌单"
 git push github
 ```
 
+> 提示：如果直连 GitHub 超时（国内网络），推送时走系统代理：`git -c http.proxy=http://127.0.0.1:7890 push github`（端口按你本机代理实际端口改）。
+
 约 1 分钟后 GitHub Pages 自动发布，前台即更新。
 
 ## 字段说明
