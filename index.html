@@ -350,7 +350,7 @@
     tb.innerHTML = html;
     Array.prototype.forEach.call(tb.querySelectorAll(".btn-mini"), function (b) {
       b.addEventListener("click", function () {
-        copyText(b.getAttribute("data-name") + " - " + b.getAttribute("data-artist"));
+        copyText(b.getAttribute("data-name"));
       });
     });
   }
