@@ -80,5 +80,5 @@ git push github
 
 ## 注意事项
 
-- GitHub Pages 免费（公开仓库），国内访问可能不稳定，详见聊天记录里的加速方案（jsDelivr / Cloudflare 反代）。
+- GitHub Pages 免费（公开仓库），国内访问可能不稳定。
 - 不想用 Excel 时，可以直接编辑 `data/songs.json` 的 `songs` 数组，结构照抄即可。
