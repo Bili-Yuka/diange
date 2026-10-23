@@ -1,6 +1,6 @@
 # 主播点歌歌单
 
-一个部署在 GitHub Pages 上的静态歌单展示站：粉丝打开网址即可翻页、搜索、点歌（复制歌名）；你只需要维护一个 Excel（xlsx），通过后台管理页导入导出即可更新歌单内容。
+一个部署在 GitHub Pages 上的静态歌单展示站：粉丝打开网址即可翻页、搜索、点歌（复制歌名）；只需要维护一个 Excel（xlsx），通过后台管理页导入导出即可更新歌单内容。
 
 ## 目录结构
 
@@ -30,7 +30,7 @@ python -m http.server 8000
 
 ## 部署到 GitHub Pages
 
-1. 确保本机装了 Git（已装）和 Python（已装）。
+1. 确保本机装了 Git和 Python。
 2. 在 GitHub 生成 Personal Access Token：`Settings → Developer settings → Personal access tokens → Generate new token`，勾选 `repo` 权限。
 3. 运行：
 
@@ -62,7 +62,7 @@ git push github
 
 约 1 分钟后 GitHub Pages 自动发布，前台即更新。
 
-## 让主播朋友用"账号密码"管理（无需 GitHub 账号）
+## 让主播用"账号密码"管理（无需 GitHub 账号）
 
 后台页已支持账号密码登录：部署一个免费的 Cloudflare Worker（见 `CLOUDFLARE_DEPLOY.md`，含注册、粘贴代码、设置账号密码、生成 GitHub 令牌的全部步骤）后，朋友打开 `admin.html` → 输入你给的账号密码 → 拉取线上歌单 → 修改 → **保存歌单**，前台约 1 分钟自动更新，全程不碰 git、不需要 GitHub 账号。
 
