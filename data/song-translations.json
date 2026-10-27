@@ -1,0 +1,2827 @@
+{
+  "updated": "2026-10-27",
+  "sourceCommit": "66251e8",
+  "description": "按原始歌名和原唱匹配。仅作中文展示与搜索；复制日文原名。reference为参考译名或音译，不代表官方中文标题。",
+  "songs": [
+    {
+      "index": 80,
+      "original": "動く、動く",
+      "nameJa": "動く、動く",
+      "nameZh": "动起来、动起来",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://zh.wikipedia.org/wiki/動起來、動起來"
+      ],
+      "note": "已见中文资料题名动起来、动起来。保留来源日文标点，不宣称官方中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 81,
+      "original": "○+●",
+      "nameJa": "○+●",
+      "nameZh": "空心圆＋实心圆",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "符号题名未能可靠定位作品。仅按图形作描述性参考译名；不推测读音、作者或曲目含义，复制仍为○+●。",
+      "artist": ""
+    },
+    {
+      "index": 82,
+      "original": "All Alone With You",
+      "nameJa": "All Alone With You",
+      "nameZh": "与你独处",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 83,
+      "original": "Angelite",
+      "nameJa": "Angelite",
+      "nameZh": "天使石",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://piapro.jp/narry",
+        "https://www.joysound.com/web/search/song/640029"
+      ],
+      "note": "检索到narry同名歌曲，但来源无歌手，不能唯一确认。angelite为矿物名，中文天使石仅作词义参考译名。",
+      "artist": ""
+    },
+    {
+      "index": 84,
+      "original": "Answer",
+      "nameJa": "Answer",
+      "nameZh": "答案",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 85,
+      "original": "Avid",
+      "nameJa": "Avid",
+      "nameZh": "渴望",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 86,
+      "original": "CH4NGE",
+      "nameJa": "CH4NGE",
+      "nameZh": "改变",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 87,
+      "original": "crossing field",
+      "nameJa": "crossing field",
+      "nameZh": "穿越领域",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 88,
+      "original": "cry for me",
+      "nameJa": "cry for me",
+      "nameZh": "为我哭泣",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 89,
+      "original": "Departures",
+      "nameJa": "Departures",
+      "nameZh": "启程",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 90,
+      "original": "dream goes on",
+      "nameJa": "dream goes on",
+      "nameZh": "梦想继续",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 91,
+      "original": "earth meal",
+      "nameJa": "earth meal",
+      "nameZh": "大地之餐",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 92,
+      "original": "Euterpe",
+      "nameJa": "Euterpe",
+      "nameZh": "欧忒耳佩",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "希腊神话专名Euterpe作中文音译欧忒耳佩；保留来源拉丁字母题名，不擅改为片假名。参考音译，不宣称官方中文歌名。",
+      "artist": ""
+    },
+    {
+      "index": 93,
+      "original": "fallen down",
+      "nameJa": "fallen down",
+      "nameZh": "坠落",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 94,
+      "original": "flos",
+      "nameJa": "flos",
+      "nameZh": "花",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://home.gamer.com.tw/artwork.php?sn=5479583"
+      ],
+      "note": "flos按拉丁语花的词义参考翻译；保留原题拼写。未把花误称为已核实官方中文名。",
+      "artist": ""
+    },
+    {
+      "index": 95,
+      "original": "Glow",
+      "nameJa": "Glow",
+      "nameZh": "微光",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 96,
+      "original": "god knows",
+      "nameJa": "god knows",
+      "nameZh": "唯神知晓",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 97,
+      "original": "Heartful Song",
+      "nameJa": "Heartful Song",
+      "nameZh": "满怀心意的歌",
+      "aliases": [
+        "真心之歌",
+        "真心的歌"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 98,
+      "original": "king",
+      "nameJa": "king",
+      "nameZh": "王",
+      "aliases": [
+        "国王"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 99,
+      "original": "know me",
+      "nameJa": "know me",
+      "nameZh": "了解我",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 100,
+      "original": "Lemon",
+      "nameJa": "Lemon",
+      "nameZh": "柠檬",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 101,
+      "original": "love potion",
+      "nameJa": "love potion",
+      "nameZh": "爱情魔药",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 102,
+      "original": "LOVE♡でしょ？",
+      "nameJa": "LOVE♡でしょ？",
+      "nameZh": "是爱♡吧？",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 103,
+      "original": "Magnet",
+      "nameJa": "Magnet",
+      "nameZh": "磁力",
+      "aliases": [
+        "磁石",
+        "磁铁"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 104,
+      "original": "Ninelie",
+      "nameJa": "Ninelie",
+      "nameZh": "奈茵莉",
+      "aliases": [
+        "无名花",
+        "甲铁城的卡巴内利片尾曲"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://www.aimer-web.jp/shoplist/160511/",
+        "https://www.aimer-web.jp/daydream/",
+        "https://www.bilibili.com/audio/am76080"
+      ],
+      "note": "Aimer官网核实原题ninelie；未找到可靠官方词源或中文名，不采用九谎、哭泣等未经证实的拆字解释。奈茵莉为便于中文检索的参考音译，保留来源Ninelie拼写。；无名花仅收为中文填词版本的搜索别名，不当作日文原曲的官方中文名。",
+      "artist": ""
+    },
+    {
+      "index": 105,
+      "original": "oath sign",
+      "nameJa": "oath sign",
+      "nameZh": "誓约之印",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 106,
+      "original": "pray",
+      "nameJa": "pray",
+      "nameZh": "祈祷",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 107,
+      "original": "RAIN -Arrange-",
+      "nameJa": "RAIN -Arrange-",
+      "nameZh": "雨（编曲版）",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 108,
+      "original": "Ref：rain",
+      "nameJa": "Ref：rain",
+      "nameZh": "雨的副歌",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://www.sonymusic.co.jp/artist/aimer/discography/SECL-2252",
+        "https://sonymusic.com.tw/album/aimer-refrain-mabayuibakari/"
+      ],
+      "note": "官方发行标题为Ref:rain，读作リフレイン；中文雨的副歌是兼顾rain/refrain的参考译名。未将动画名恋如雨止冒充官方歌名；保留来源全角冒号。",
+      "artist": ""
+    },
+    {
+      "index": 109,
+      "original": "Secret base～君がくれたもの～",
+      "nameJa": "Secret base～君がくれたもの～",
+      "nameZh": "秘密基地～你给我的东西～",
+      "aliases": [
+        "秘密基地",
+        "你给我的所有",
+        "你给我的东西"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 110,
+      "original": "STYX HELIX",
+      "nameJa": "STYX HELIX",
+      "nameZh": "冥河螺旋",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://mythandroid.com/musics/15583",
+        "https://www.hk01.com/即時娛樂/24473/每周日音-冥河螺旋-讀檔重回-一切從零開始的異世界生活"
+      ],
+      "note": "MYTH & ROID官网核实原题；中文媒体采用冥河螺旋，为已见使用的中文译名，不宣称官方中文定名。",
+      "artist": ""
+    },
+    {
+      "index": 111,
+      "original": "Summer time",
+      "nameJa": "Summer time",
+      "nameZh": "夏日时光",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 112,
+      "original": "sweets parade",
+      "nameJa": "sweets parade",
+      "nameZh": "甜点游行",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 113,
+      "original": "THERE IS A REASON",
+      "nameJa": "THERE IS A REASON",
+      "nameZh": "总有缘由",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 114,
+      "original": "unlasting",
+      "nameJa": "unlasting",
+      "nameZh": "无法长久",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 115,
+      "original": "Wishing",
+      "nameJa": "Wishing",
+      "nameZh": "心愿",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 116,
+      "original": "Yellow",
+      "nameJa": "Yellow",
+      "nameZh": "黄色",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 117,
+      "original": "YOU&IDOL",
+      "nameJa": "YOU&IDOL",
+      "nameZh": "你与偶像",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 118,
+      "original": "Yubikiri-Genman.",
+      "nameJa": "Yubikiri-Genman.",
+      "nameZh": "拉勾勾",
+      "aliases": [
+        "拉钩"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://projectmili.com/karaoke-data",
+        "https://moegirl.uk/YUBIKIRI-GENMAN"
+      ],
+      "note": "Mili官网核实拉丁字母题名；中文资料采用拉勾勾。保留来源Yubikiri-Genman.格式和末尾句点，不擅自统一大小写。",
+      "artist": ""
+    },
+    {
+      "index": 119,
+      "original": "アイオライト",
+      "nameJa": "アイオライト",
+      "nameZh": "堇青石",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 120,
+      "original": "あなたは煙草　私はシャボン",
+      "nameJa": "あなたは煙草　私はシャボン",
+      "nameZh": "你是香烟，我是肥皂泡",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 121,
+      "original": "アンコール",
+      "nameJa": "アンコール",
+      "nameZh": "安可",
+      "aliases": [
+        "再演"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 122,
+      "original": "あんずの花",
+      "nameJa": "あんずの花",
+      "nameZh": "杏花",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 123,
+      "original": "いかないで",
+      "nameJa": "いかないで",
+      "nameZh": "别走",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://moegirl.uk/いかないで"
+      ],
+      "note": "中文资料采用别走。来源未给歌手，保留原题，不补写作者。",
+      "artist": ""
+    },
+    {
+      "index": 124,
+      "original": "いけないボーダーライン/禁忌的边界线",
+      "nameJa": "いけないボーダーライン",
+      "nameZh": "禁忌的边界线",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [],
+      "note": "中文名由来源斜杠后的中文释名提供；原文复制仅保留日文题名。",
+      "artist": ""
+    },
+    {
+      "index": 125,
+      "original": "ヴァンパイア",
+      "nameJa": "ヴァンパイア",
+      "nameZh": "吸血鬼",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 126,
+      "original": "おじゃま虫",
+      "nameJa": "おじゃま虫",
+      "nameZh": "麻烦鬼",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV1HK421y7DS/"
+      ],
+      "note": "中文视频关联曲名显示麻烦鬼；采用已见中文用法，不宣称官方定名。",
+      "artist": ""
+    },
+    {
+      "index": 127,
+      "original": "カタオモイ",
+      "nameJa": "カタオモイ",
+      "nameZh": "单相思",
+      "aliases": [
+        "单恋"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.youtube.com/watch?v=fuYnKQ_Q0_M",
+        "https://www.aimer-web.jp/daydream/"
+      ],
+      "note": "作者本人发布的中文翻唱标题采用单相思，Aimer官网核实日文原题；中文属常见译名。",
+      "artist": ""
+    },
+    {
+      "index": 128,
+      "original": "カナリア",
+      "nameJa": "カナリア",
+      "nameZh": "金丝雀",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 129,
+      "original": "きらり",
+      "nameJa": "きらり",
+      "nameZh": "闪耀",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 130,
+      "original": "グランドエスケープ",
+      "nameJa": "グランドエスケープ",
+      "nameZh": "逃离地面",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "逃离地面是中文听众常用译法，但本次未找到足以认定官方中文定名的一手证据，因此保守标作参考译名。",
+      "artist": ""
+    },
+    {
+      "index": 131,
+      "original": "クリームソーダとシャンデリア",
+      "nameJa": "クリームソーダとシャンデリア",
+      "nameZh": "奶油苏打与吊灯",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 132,
+      "original": "コネクト",
+      "nameJa": "コネクト",
+      "nameZh": "连接",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 133,
+      "original": "サインはＢ！",
+      "nameJa": "サインはＢ！",
+      "nameZh": "暗号是B！",
+      "aliases": [
+        "暗号B"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV1Sm4y1W7Ce/"
+      ],
+      "note": "中文视频标题采用暗号是B，中文动画资料亦有暗号B；保留来源全角Ｂ及感叹号，不宣称官方中文定名。",
+      "artist": ""
+    },
+    {
+      "index": 134,
+      "original": "さようなら、花泥棒さん",
+      "nameJa": "さようなら、花泥棒さん",
+      "nameZh": "再见了，偷花贼",
+      "aliases": [
+        "再见，偷花人",
+        "再见了，偷花人"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://moegirl.uk/再见，偷花人",
+        "https://www.bilibili.com/video/BV19iDDBtE5D/"
+      ],
+      "note": "中文资料题名为再见了，偷花贼；作者本人投稿的舞蹈视频采用再见，偷花人，两种用法均保留用于检索。",
+      "artist": ""
+    },
+    {
+      "index": 135,
+      "original": "しあわせのことば",
+      "nameJa": "しあわせのことば",
+      "nameZh": "幸福的话语",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://music.apple.com/us/song/1528441091"
+      ],
+      "note": "检索到凋叶棕同名曲，但来源未给歌手，不唯一匹配；幸福的话语为原题直译参考名。",
+      "artist": ""
+    },
+    {
+      "index": 136,
+      "original": "シリウスの心臓",
+      "nameJa": "シリウスの心臓",
+      "nameZh": "天狼星的心脏",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV1Cz421d7BW/",
+        "https://www.midishow.com/en/midi/190685.html"
+      ],
+      "note": "中文创作者投稿及乐谱条目均采用天狼星的心脏；其投稿说明指向ヰ世界情緒原曲。中文用法已见证据，不宣称官方定名。",
+      "artist": ""
+    },
+    {
+      "index": 137,
+      "original": "シル・ヴ・プレジデント (如果我是大统领)",
+      "nameJa": "シル・ヴ・プレジデント",
+      "nameZh": "如果我是大统领",
+      "aliases": [
+        "如果我成为大统领"
+      ],
+      "translationType": "provided",
+      "sources": [
+        "https://www.taiko.wiki/song/1061?lang=zh-tw"
+      ],
+      "note": "保留来源提供的中文名，并移除中文释名括号；另收录已有中文名称用法，非声明官方中文定名。",
+      "artist": ""
+    },
+    {
+      "index": 138,
+      "original": "シルシ",
+      "nameJa": "シルシ",
+      "nameZh": "印记",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 139,
+      "original": "すずめ",
+      "nameJa": "すずめ",
+      "nameZh": "铃芽",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 140,
+      "original": "スパークル",
+      "nameJa": "スパークル",
+      "nameZh": "火花",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 141,
+      "original": "たばこ",
+      "nameJa": "たばこ",
+      "nameZh": "香烟",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 142,
+      "original": "たんぽぽ水車",
+      "nameJa": "たんぽぽ水車",
+      "nameZh": "蒲公英水车",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://www.yuiyuimakino.com/discography/single.php?page=3"
+      ],
+      "note": "牧野由依官方唱片页核实たんぽぽ水車题名；中文蒲公英水车是词义参考翻译，版本未知，未补加Yui Makino Version。",
+      "artist": ""
+    },
+    {
+      "index": 143,
+      "original": "チカっとチカ（书记歌）",
+      "nameJa": "チカっとチカ千花っ♡",
+      "nameZh": "书记歌",
+      "aliases": [
+        "チカっとチカ"
+      ],
+      "translationType": "provided",
+      "sources": [
+        "https://kaguya.love/1st/bddvd/02.html"
+      ],
+      "note": "中文别名书记歌来自来源；动画官方唱片页核实完整原题チカっとチカ千花っ♡，据此补全来源缩写。",
+      "artist": ""
+    },
+    {
+      "index": 144,
+      "original": "どうして",
+      "nameJa": "どうして",
+      "nameZh": "为什么",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 145,
+      "original": "ドライフラワー",
+      "nameJa": "ドライフラワー",
+      "nameZh": "干花",
+      "aliases": [
+        "干燥花"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV15A411T7r7/",
+        "https://www.bilibili.com/video/BV11Z4y1t7Vj/"
+      ],
+      "note": "中文视频题名采用干花及干燥花；保留常见两种译法，不宣称官方定名。",
+      "artist": ""
+    },
+    {
+      "index": 146,
+      "original": "ドラえもんのうた",
+      "nameJa": "ドラえもんのうた",
+      "nameZh": "哆啦A梦之歌",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 147,
+      "original": "なでなで",
+      "nameJa": "なでなで",
+      "nameZh": "摸摸",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 148,
+      "original": "なんでもないや",
+      "nameJa": "なんでもないや",
+      "nameZh": "没什么大不了",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "按原题作参考译名，非官方中文名。来源未提供歌手，不据同名题目添加作品或歌手信息。",
+      "artist": ""
+    },
+    {
+      "index": 149,
+      "original": "ハイドアンド・シーク",
+      "nameJa": "ハイドアンド・シーク",
+      "nameZh": "捉迷藏",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/list/1111222941?bvid=BV1yW4y1Z7CQ&oid=955526025"
+      ],
+      "note": "歌手こはならむ本人B站投稿的翻唱标题标注捉迷藏，具有直接中文使用证据。",
+      "artist": ""
+    },
+    {
+      "index": 150,
+      "original": "パズルガール（拼图女孩）",
+      "nameJa": "パズルガール",
+      "nameZh": "拼图女孩",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 1,
+      "note": "中文名取自用户原始歌名括注；仅去除明确中文释义括号。",
+      "artist": ""
+    },
+    {
+      "index": 151,
+      "original": "パプリカ",
+      "nameJa": "パプリカ",
+      "nameZh": "红辣椒",
+      "aliases": [
+        "甜椒",
+        "红甜椒",
+        "帕普莉卡"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://zh.wikipedia.org/wiki/红辣椒_(米津玄师单曲)"
+      ],
+      "evidenceURLs": [
+        "https://zh.wikipedia.org/wiki/红辣椒_(米津玄师单曲)"
+      ],
+      "confidence": 0.9,
+      "note": "通行译名及别名有中文条目记载；原作者未提供，不据此认定演唱版本。",
+      "artist": ""
+    },
+    {
+      "index": 152,
+      "original": "ハルノユキ",
+      "nameJa": "ハルノユキ",
+      "nameZh": "春之雪",
+      "aliases": [
+        "春雪"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.inbtv.com/article.html?id=1867",
+        "https://www.bilibili.com/video/BV1mt411y7vh/"
+      ],
+      "evidenceURLs": [
+        "https://www.inbtv.com/article.html?id=1867",
+        "https://www.bilibili.com/video/BV1mt411y7vh/"
+      ],
+      "confidence": 0.9,
+      "note": "中文报道采用《春之雪》；《春雪》见中文视频标题。原作者未提供。",
+      "artist": ""
+    },
+    {
+      "index": 153,
+      "original": "ハレハレヤ",
+      "nameJa": "ハレハレヤ",
+      "nameZh": "朗朗晴天",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.youtube.com/watch?v=2B7MEADeLyA",
+        "https://www.youtube.com/watch?v=O0htMqjgaus"
+      ],
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=2B7MEADeLyA",
+        "https://www.youtube.com/watch?v=O0htMqjgaus"
+      ],
+      "confidence": 0.95,
+      "note": "作者官方视频确认原题；翻唱者视频采用中文《朗朗晴天》。未据此补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 154,
+      "original": "ハロ/ハワユ",
+      "nameJa": "ハロ/ハワユ",
+      "nameZh": "你好／你好吗",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://w.atwiki.jp/vocaloidchly/pages/4723.html?pc_mode=1"
+      ],
+      "evidenceURLs": [
+        "https://w.atwiki.jp/vocaloidchly/pages/4723.html?pc_mode=1"
+      ],
+      "confidence": 0.85,
+      "note": "原题为英语 Hello / How Are You 的日语音写；中文为参考直译，原题斜线保留。",
+      "artist": ""
+    },
+    {
+      "index": 155,
+      "original": "ひとり旅",
+      "nameJa": "ひとり旅",
+      "nameZh": "独自旅行",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 156,
+      "original": "ファンサ",
+      "nameJa": "ファンサ",
+      "nameZh": "粉丝服务",
+      "aliases": [
+        "饭撒",
+        "粉丝福利"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://honeyworks.jp/special/"
+      ],
+      "evidenceURLs": [
+        "https://honeyworks.jp/special/"
+      ],
+      "confidence": 0.75,
+      "note": "ファンサ通常为 fan service 的缩写，暂译《粉丝服务》；未核实固定中文曲名，不补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 157,
+      "original": "フォニイ",
+      "nameJa": "フォニイ",
+      "nameZh": "伪物",
+      "aliases": [
+        "赝品"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://bkso.baidu.com/item/伪物/64414412?fromModule=disambiguation",
+        "https://www.gamemale.com/thread-94709-2-1.html"
+      ],
+      "evidenceURLs": [
+        "https://bkso.baidu.com/item/伪物/64414412?fromModule=disambiguation",
+        "https://www.gamemale.com/thread-94709-2-1.html"
+      ],
+      "confidence": 0.85,
+      "note": "中文条目采用《伪物》；《赝品》亦见中文翻译讨论，均不宣称为官方译名。",
+      "artist": ""
+    },
+    {
+      "index": 158,
+      "original": "フラレガイガール",
+      "nameJa": "フラレガイガール",
+      "nameZh": "被甩的女孩",
+      "aliases": [
+        "值得被甩的女孩"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://www.bilibili.com/video/BV1Rp411R7GQ/",
+        "https://www.sayuri-official.com/discography/huraregai-girl-normal/"
+      ],
+      "evidenceURLs": [
+        "https://www.bilibili.com/video/BV1Rp411R7GQ/"
+      ],
+      "confidence": 0.7,
+      "note": "采用中文翻唱合集中出现的俗称《被甩男女》，是通行检索名而非官方中文标题；原作者未提供。；复核：ガール为女孩，不能译成男女；标题有双关，中文采用参考译名。",
+      "artist": ""
+    },
+    {
+      "index": 159,
+      "original": "ふわふわ",
+      "nameJa": "ふわふわ",
+      "nameZh": "轻飘飘",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 160,
+      "original": "また あした",
+      "nameJa": "また あした",
+      "nameZh": "明天见",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://www.qupu123.com/space/work/408216/606/1.html"
+      ],
+      "evidenceURLs": [
+        "https://www.qupu123.com/space/work/408216/606/1.html"
+      ],
+      "confidence": 0.8,
+      "note": "《明天见》有同题中文曲谱用例；同名曲无法据空白作者唯一确认，按字面参考译名。",
+      "artist": ""
+    },
+    {
+      "index": 161,
+      "original": "ミカヅキ",
+      "nameJa": "ミカヅキ",
+      "nameZh": "新月",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.joox.com/mo/single/LO4lvNY_BA5mfAx__D8AdQ%3D%3D"
+      ],
+      "evidenceURLs": [
+        "https://www.joox.com/mo/single/LO4lvNY_BA5mfAx__D8AdQ%3D%3D"
+      ],
+      "confidence": 0.9,
+      "note": "平台标题列为《ミカヅキ（新月）》；未据此补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 162,
+      "original": "モア！ジャンプ！モア！",
+      "nameJa": "モア！ジャンプ！モア！",
+      "nameZh": "更多！跳起来！更多！",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://pjsekai.sega.jp/championship2021/rule/index.html"
+      ],
+      "evidenceURLs": [
+        "https://pjsekai.sega.jp/championship2021/rule/index.html"
+      ],
+      "confidence": 0.8,
+      "note": "官方游戏资料确认原题；中文为英语 More! Jump! More! 的参考直译，未核实官方中文题名。",
+      "artist": ""
+    },
+    {
+      "index": 163,
+      "original": "モエチャッカファイア",
+      "nameJa": "モエチャッカファイア",
+      "nameZh": "萌萌点火",
+      "aliases": [
+        "萌萌哒起火",
+        "萌萌起火"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://plugplus.rittor-music.co.jp/learning/interview/issei_interview/"
+      ],
+      "evidenceURLs": [
+        "https://plugplus.rittor-music.co.jp/learning/interview/issei_interview/"
+      ],
+      "confidence": 0.6,
+      "note": "参考译名，保留萌、点火的标题语感；采访确认标题但不提供中文名，不宣称中文为官方。",
+      "artist": ""
+    },
+    {
+      "index": 164,
+      "original": "ライバー",
+      "nameJa": "ライバー",
+      "nameZh": "莱巴（音译）",
+      "aliases": [
+        "莱巴",
+        "赖巴"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://www.hinataya.me/video/"
+      ],
+      "evidenceURLs": [
+        "https://www.hinataya.me/video/"
+      ],
+      "confidence": 0.35,
+      "note": "低置信参考译名：ライバー日常可指直播者，但曲名也可能是造词；资料中有日向文同题作品，空白作者不足以认定其身份或词义，建议人工确认。；未找到可靠通用中文名或作者释义，避免误译为直播者，暂采用明确标注的音译。",
+      "artist": ""
+    },
+    {
+      "index": 165,
+      "original": "ルナ",
+      "nameJa": "ルナ",
+      "nameZh": "露娜（月亮）",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.55,
+      "note": "参考音译附月亮词义。ルナ可为人名或拉丁语月亮，空白作者无法确认具体作品或命名意图。",
+      "artist": ""
+    },
+    {
+      "index": 166,
+      "original": "れぞんでーとる",
+      "nameJa": "れぞんでーとる",
+      "nameZh": "存在的理由",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "按法语 raison d’être 的日语音写暂译《存在的理由》。原题保留原有平假名，不改成其他同音歌曲的片假名标题。作者与具体曲目未确认。",
+      "artist": ""
+    },
+    {
+      "index": 167,
+      "original": "わたしの線香",
+      "nameJa": "わたしの線香",
+      "nameZh": "我的线香",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://kaf.kamitsubaki.jp/discography/20220223/134/"
+      ],
+      "evidenceURLs": [
+        "https://kaf.kamitsubaki.jp/discography/20220223/134/"
+      ],
+      "confidence": 0.85,
+      "note": "花譜官网有同题作品并确认原题；中文为字面参考译名。原作者未提供，不据此认定演唱版本。",
+      "artist": ""
+    },
+    {
+      "index": 168,
+      "original": "愛にできることはまだあるかい",
+      "nameJa": "愛にできることはまだあるかい",
+      "nameZh": "爱还能做些什么",
+      "aliases": [
+        "爱能做到的还有什么",
+        "爱还能做到什么"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://moegirl.icu/爱还能做到什么",
+        "https://www.bilibili.com/video/BV1E14y1m7hS/"
+      ],
+      "evidenceURLs": [
+        "https://moegirl.icu/爱还能做到什么",
+        "https://www.bilibili.com/video/BV1E14y1m7hS/"
+      ],
+      "confidence": 0.9,
+      "note": "采用已见中文视频标题的译名；中文百科同时记载其他常见译法。未补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 169,
+      "original": "愛言葉III",
+      "nameJa": "愛言葉III",
+      "nameZh": "爱言叶III",
+      "aliases": [
+        "爱言叶3",
+        "爱言叶三",
+        "爱之言3"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://bkso.baidu.com/item/愛言葉III/23314690?fromModule=lemma_inlink"
+      ],
+      "evidenceURLs": [
+        "https://bkso.baidu.com/item/愛言葉III/23314690?fromModule=lemma_inlink"
+      ],
+      "confidence": 0.9,
+      "note": "采用中文检索常用《爱言叶III》；原题罗马数字形式保持用户原文。",
+      "artist": ""
+    },
+    {
+      "index": 170,
+      "original": "愛言葉IV",
+      "nameJa": "愛言葉IV",
+      "nameZh": "爱言叶IV",
+      "aliases": [
+        "爱言叶4",
+        "爱言叶四",
+        "爱之言4"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.8,
+      "note": "参考译名：愛言葉意为爱的言语。未以其他系列曲目的资料冒充本曲固定中文名。",
+      "artist": ""
+    },
+    {
+      "index": 171,
+      "original": "白金disco",
+      "nameJa": "白金disco",
+      "nameZh": "白金迪斯科",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.everyonepiano.cn/Piano-14421.html",
+        "https://www.bilibili.com/video/BV1vx411h72o/"
+      ],
+      "evidenceURLs": [
+        "https://www.everyonepiano.cn/Piano-14421.html",
+        "https://www.bilibili.com/video/BV1vx411h72o/"
+      ],
+      "confidence": 0.9,
+      "note": "采用通行中文《白金迪斯科》；nameJa保留用户原始白金disco，不擅改书写形式。",
+      "artist": ""
+    },
+    {
+      "index": 172,
+      "original": "悲しみは水のよう",
+      "nameJa": "悲しみは水のよう",
+      "nameZh": "悲伤像水一样",
+      "aliases": [
+        "我的悲伤是水做的"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://music.apple.com/us/album/悲しみは水のよう-single/1809045122",
+        "https://rapzh.com/songs/4767238"
+      ],
+      "evidenceURLs": [
+        "https://music.apple.com/us/album/悲しみは水のよう-single/1809045122",
+        "https://rapzh.com/songs/4767238"
+      ],
+      "confidence": 0.8,
+      "note": "直译参考名《悲伤像水一样》；检索资料注明同题作品为《我的悲伤是水做的》日语版，因此中文原曲名仅作检索别名。原作者未提供。",
+      "artist": ""
+    },
+    {
+      "index": 173,
+      "original": "彼女は旅に出る",
+      "nameJa": "彼女は旅に出る",
+      "nameZh": "她踏上了旅途",
+      "aliases": [
+        "她踏上了旅程"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV1ve41137An/",
+        "https://www.ktvc8.com/More_333841_11.html"
+      ],
+      "evidenceURLs": [
+        "https://www.bilibili.com/video/BV1ve41137An/",
+        "https://www.ktvc8.com/More_333841_11.html"
+      ],
+      "confidence": 0.85,
+      "note": "两种译名均有中文标题用例，未宣称为官方中文名。",
+      "artist": ""
+    },
+    {
+      "index": 174,
+      "original": "病名恋ワヅライ",
+      "nameJa": "病名恋ワズライ",
+      "nameZh": "病名为恋爱烦恼",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://honeyworks.jp/news/142/",
+        "https://honeyworks.jp/news/142/"
+      ],
+      "evidenceURLs": [
+        "https://honeyworks.jp/news/142/"
+      ],
+      "confidence": 0.75,
+      "note": "中文为参考译名。HoneyWorks官方题名为病名恋ワズライ，与原始数据ワヅライ有一字差异；按保留原文要求未擅改。；官方曲目拼写为ワズライ，原条目ワヅライ保留作搜索来源。",
+      "artist": ""
+    },
+    {
+      "index": 175,
+      "original": "玻璃の空",
+      "nameJa": "玻璃の空",
+      "nameZh": "玻璃的天空",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://bgm.tv/subject/22490"
+      ],
+      "evidenceURLs": [
+        "https://bgm.tv/subject/22490"
+      ],
+      "confidence": 0.75,
+      "note": "存在同题专辑及曲目，但原作者未提供；中文仅按字面参考翻译，不补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 176,
+      "original": "不可解",
+      "nameJa": "不可解",
+      "nameZh": "不可解",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://kaf.kamitsubaki.jp/history/"
+      ],
+      "evidenceURLs": [
+        "https://kaf.kamitsubaki.jp/history/"
+      ],
+      "confidence": 0.8,
+      "note": "题名汉字在中文中同样成立，保留《不可解》；官网仅辅助确认存在同题作品，不据此补写作者。",
+      "artist": ""
+    },
+    {
+      "index": 177,
+      "original": "残響散歌",
+      "nameJa": "残響散歌",
+      "nameZh": "残响散歌",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://music.sonyselect.net/m/page/playlist.html?id=895"
+      ],
+      "evidenceURLs": [
+        "https://music.sonyselect.net/m/page/playlist.html?id=895"
+      ],
+      "confidence": 0.95,
+      "note": "索尼精选音乐页面列出原名及简体中文《残响散歌》。",
+      "artist": ""
+    },
+    {
+      "index": 178,
+      "original": "忏悔录",
+      "nameJa": "懺悔録",
+      "nameZh": "忏悔录",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [
+        "https://kurokinagisa.com/discography/detail/1121/",
+        "https://www.bilibili.com/video/BV1rP4y1K7mX/"
+      ],
+      "evidenceURLs": [
+        "https://kurokinagisa.com/discography/detail/1121/",
+        "https://www.bilibili.com/video/BV1rP4y1K7mX/"
+      ],
+      "confidence": 0.75,
+      "note": "中文名保留用户原文《忏悔录》。黒木渚官网原题为《懺悔録》，中文视频使用《忏悔录》；据此还原日文正字。因作者空白，不能唯一确认本条确为该作品，不补写作者。",
+      "artist": ""
+    },
+    {
+      "index": 179,
+      "original": "超絶かわいい",
+      "nameJa": "超絶かわいい",
+      "nameZh": "超级可爱",
+      "aliases": [
+        "超绝可爱"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 180,
+      "original": "初めましての気持ちを",
+      "nameJa": "初めましての気持ちを",
+      "nameZh": "初次见面的心情",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.45,
+      "note": "仅按原文暂译《初次见面的心情》；精确标题检索未找到可核实歌曲，不能确认原题是否误录，原文保持不变。",
+      "artist": ""
+    },
+    {
+      "index": 181,
+      "original": "初恋の絵本",
+      "nameJa": "初恋の絵本",
+      "nameZh": "初恋的绘本",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://honeyworks.jp/special/"
+      ],
+      "evidenceURLs": [
+        "https://honeyworks.jp/special/"
+      ],
+      "confidence": 0.85,
+      "note": "官方目录有同题作品；中文为字面参考译名，不宣称官方中文名，不补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 182,
+      "original": "初日",
+      "nameJa": "初日",
+      "nameZh": "初日",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.6,
+      "note": "汉字题名中文也可读作《初日》；可能意为首日或首演日，空白作者无法唯一确认作品，保守保留。",
+      "artist": ""
+    },
+    {
+      "index": 183,
+      "original": "春よ、来い",
+      "nameJa": "春よ、来い",
+      "nameZh": "春天啊，来吧",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 184,
+      "original": "春夢",
+      "nameJa": "春夢",
+      "nameZh": "春梦",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 185,
+      "original": "打上花火",
+      "nameJa": "打上花火",
+      "nameZh": "升空烟花",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.85,
+      "note": "参考直译《升空烟花》；原题保持打上花火，不在未查证时把同名作品或演唱版本绑定。",
+      "artist": ""
+    },
+    {
+      "index": 186,
+      "original": "东京日和",
+      "nameJa": "東京日和",
+      "nameZh": "东京日和",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [
+        "https://onukitaeko.jp/project/soundtrack_tokyobiyori/",
+        "https://www.youtube.com/watch?v=VywKnf4zVAc"
+      ],
+      "evidenceURLs": [
+        "https://onukitaeko.jp/project/soundtrack_tokyobiyori/",
+        "https://www.youtube.com/watch?v=VywKnf4zVAc"
+      ],
+      "confidence": 0.85,
+      "note": "中文名沿用用户原文《东京日和》。官方目录和官方艺人音源均有《東京日和》，仅还原日文东京字形；有多首同名作品，未认定作者。",
+      "artist": ""
+    },
+    {
+      "index": 187,
+      "original": "都落ち",
+      "nameJa": "都落ち",
+      "nameZh": "离京",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "都落ち本义为离开都城、落乡，暂取简明参考译名《离京》；未认定为特定同题歌曲。",
+      "artist": ""
+    },
+    {
+      "index": 188,
+      "original": "風になる",
+      "nameJa": "風になる",
+      "nameZh": "幻化成风",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://neodb.social/album/7SnGMOU73FAYFGG8dr14O6"
+      ],
+      "evidenceURLs": [
+        "https://neodb.social/album/7SnGMOU73FAYFGG8dr14O6"
+      ],
+      "confidence": 0.9,
+      "note": "中文音乐目录有通行译名《幻化成风》；不将中文改编歌名小手拉大手当成本曲别名。",
+      "artist": ""
+    },
+    {
+      "index": 189,
+      "original": "歌に形はないけれど",
+      "nameJa": "歌に形はないけれど",
+      "nameZh": "虽然歌声没有形体",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://shoin.repo.nii.ac.jp/record/1451/files/JOL2014furukawa.pdf"
+      ],
+      "evidenceURLs": [
+        "https://shoin.repo.nii.ac.jp/record/1451/files/JOL2014furukawa.pdf"
+      ],
+      "confidence": 0.95,
+      "note": "学术论文的中日歌曲对照直接列出《歌に形はないけれど》→《虽然歌声没有形体》。",
+      "artist": ""
+    },
+    {
+      "index": 190,
+      "original": "光になる",
+      "nameJa": "光になる",
+      "nameZh": "成为光",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "字面参考译名；光になる有多首同题歌曲，原作者未提供，不把它改为別题《光るなら》。",
+      "artist": ""
+    },
+    {
+      "index": 191,
+      "original": "海鳥花",
+      "nameJa": "海鳥花",
+      "nameZh": "海鸟花",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "题名汉字作简体《海鸟花》；作者及作品身份尚未唯一确认，未扩展解读为海鸟与花。",
+      "artist": ""
+    },
+    {
+      "index": 192,
+      "original": "好きだから",
+      "nameJa": "好きだから",
+      "nameZh": "因为喜欢你",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.8,
+      "note": "字面参考译名；不擅添原题未有的句号，不补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 193,
+      "original": "好きな人がいること",
+      "nameJa": "好きな人がいること",
+      "nameZh": "有喜欢的人",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 194,
+      "original": "紅蓮華",
+      "nameJa": "紅蓮華",
+      "nameZh": "红莲华",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.9,
+      "note": "题名汉字转为简体《红莲华》；不凭空补写原作者或演唱版本。",
+      "artist": ""
+    },
+    {
+      "index": 195,
+      "original": "虹の彼方に",
+      "nameJa": "虹の彼方に",
+      "nameZh": "彩虹的彼端",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 196,
+      "original": "花に亡霊",
+      "nameJa": "花に亡霊",
+      "nameZh": "花上的亡灵",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV11V411C7BQ/",
+        "https://m.jitashe.org/tab/1399596/"
+      ],
+      "evidenceURLs": [
+        "https://www.bilibili.com/video/BV11V411C7BQ/",
+        "https://m.jitashe.org/tab/1399596/"
+      ],
+      "confidence": 0.9,
+      "note": "中文翻唱标题及曲谱均采用《花上的亡灵》，未宣称官方译名。",
+      "artist": ""
+    },
+    {
+      "index": 197,
+      "original": "花のうた",
+      "nameJa": "花のうた",
+      "nameZh": "花之歌",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "按用户原文花のうた直译为《花之歌》；作者空白，不擅改为其他作品《花の唄》。",
+      "artist": ""
+    },
+    {
+      "index": 198,
+      "original": "輝きのエチュード",
+      "nameJa": "輝きのエチュード",
+      "nameZh": "光辉的练习曲",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 199,
+      "original": "回る空うさぎ",
+      "nameJa": "回る空うさぎ",
+      "nameZh": "回转的天空兔子",
+      "aliases": [
+        "月兔回转于空中"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV14J411b7cb/",
+        "https://m.acfun.cn/upPage/33060288"
+      ],
+      "evidenceURLs": [
+        "https://www.bilibili.com/video/BV14J411b7cb/",
+        "https://m.acfun.cn/upPage/33060288"
+      ],
+      "confidence": 0.9,
+      "note": "花譜官方中文账号翻唱标题采用《回转的天空兔子》；另一翻唱者目录有《月兔回转于空中》。未据此补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 200,
+      "original": "幾年月",
+      "nameJa": "幾年月",
+      "nameZh": "多少岁月",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "按字面参考译名《多少岁月》；原作者未提供，同题作品未唯一确认。保留与下一条的重复记录。",
+      "artist": ""
+    },
+    {
+      "index": 201,
+      "original": "幾年月",
+      "nameJa": "幾年月",
+      "nameZh": "多少岁月",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "按字面参考译名《多少岁月》；原作者未提供，同题作品未唯一确认。保留与上一条的重复记录。",
+      "artist": ""
+    },
+    {
+      "index": 202,
+      "original": "寄り酔い",
+      "nameJa": "寄り酔い",
+      "nameZh": "借醉依偎",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://www.upee.review/p/3b6",
+        "https://www.youtube.com/watch?v=YX8CS3AVYjA"
+      ],
+      "evidenceURLs": [
+        "https://www.upee.review/p/3b6",
+        "https://www.youtube.com/watch?v=YX8CS3AVYjA"
+      ],
+      "confidence": 0.7,
+      "note": "参考译名《借醉依偎》，体现寄靠与醉意的造词；采访和平台视频确认同题作品，但未核实固定中文译名，不补写歌手。",
+      "artist": ""
+    },
+    {
+      "index": 203,
+      "original": "届かない恋",
+      "nameJa": "届かない恋",
+      "nameZh": "传达不到的爱恋",
+      "aliases": [
+        "无法传达的爱恋"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://bgm.tv/subject/4943",
+        "https://moegirl.icu/无法传达的爱恋"
+      ],
+      "evidenceURLs": [
+        "https://bgm.tv/subject/4943",
+        "https://moegirl.icu/无法传达的爱恋"
+      ],
+      "confidence": 0.9,
+      "note": "采用中文目录通行译名；另一常见译法列为别名。",
+      "artist": ""
+    },
+    {
+      "index": 204,
+      "original": "今をかける少女",
+      "nameJa": "今をかける少女",
+      "nameZh": "穿越当下的少女",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 205,
+      "original": "金曜日のおはよう",
+      "nameJa": "金曜日のおはよう",
+      "nameZh": "星期五的早安",
+      "aliases": [
+        "星期五的早上好",
+        "周五的早安"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.marumaru-x.com/japanese-song/play-94ogqp0n0j",
+        "https://whudays.org/activity/2020/winter-festival/"
+      ],
+      "evidenceURLs": [
+        "https://www.marumaru-x.com/japanese-song/play-94ogqp0n0j",
+        "https://whudays.org/activity/2020/winter-festival/"
+      ],
+      "confidence": 0.95,
+      "note": "中文歌曲教学页面与演出活动节目单均采用《星期五的早安》。",
+      "artist": ""
+    },
+    {
+      "index": 206,
+      "original": "進め！そっちだ！",
+      "nameJa": "進め！そっちだ！",
+      "nameZh": "前进！就是那边！",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 207,
+      "original": "景色",
+      "nameJa": "景色",
+      "nameZh": "景色",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 208,
+      "original": "鏡花水月",
+      "nameJa": "鏡花水月",
+      "nameZh": "镜花水月",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 209,
+      "original": "君のとおりに",
+      "nameJa": "君のとおりに",
+      "nameZh": "照你的样子",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.4,
+      "note": "仅按原文暂译《照你的样子》；精确标题检索未找到可核实歌曲，题名可能有误录，但未擅改为近似标题。",
+      "artist": ""
+    },
+    {
+      "index": 210,
+      "original": "君の隣に",
+      "nameJa": "君の隣に",
+      "nameZh": "在你身旁",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 211,
+      "original": "君をなぞるだけの夜",
+      "nameJa": "君をなぞるだけの夜",
+      "nameZh": "只描摹你的夜晚",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 212,
+      "original": "可愛くてごめん",
+      "nameJa": "可愛くてごめん",
+      "nameZh": "很抱歉我这么可爱",
+      "aliases": [
+        "我太可爱了，对不起",
+        "可爱抱歉",
+        "这么可爱真是抱歉"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://zh.wikipedia.org/wiki/我太可愛了，對不起"
+      ],
+      "evidenceURLs": [
+        "https://zh.wikipedia.org/wiki/我太可愛了，對不起"
+      ],
+      "confidence": 0.9,
+      "note": "中文条目记录《很抱歉我这么可爱》及《我太可爱了，对不起》等译法，未宣称官方中文名。",
+      "artist": ""
+    },
+    {
+      "index": 213,
+      "original": "可愛くなりたい",
+      "nameJa": "可愛くなりたい",
+      "nameZh": "想变得可爱",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://www.kugou.com/mixsong/w5k9xe3.html",
+        "https://www.bilibili.com/video/BV1op4y1h7Cu/"
+      ],
+      "evidenceURLs": [
+        "https://www.kugou.com/mixsong/w5k9xe3.html",
+        "https://www.bilibili.com/video/BV1op4y1h7Cu/"
+      ],
+      "confidence": 0.95,
+      "note": "音乐平台及翻唱者官方中文账号均采用《想变得可爱》。",
+      "artist": ""
+    },
+    {
+      "index": 214,
+      "original": "恋",
+      "nameJa": "恋",
+      "nameZh": "恋",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "题名汉字《恋》中文可直接使用，作品同名较多，作者空白，未认定为星野源等任何特定作品。",
+      "artist": ""
+    },
+    {
+      "index": 215,
+      "original": "恋ノ蟲",
+      "nameJa": "恋ノ蟲",
+      "nameZh": "恋爱之虫",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.7,
+      "note": "恋ノ蟲按字面参考翻译《恋爱之虫》；原有异体字与片假名ノ均保留在nameJa，作者未确认。",
+      "artist": ""
+    },
+    {
+      "index": 216,
+      "original": "恋をしよう",
+      "nameJa": "恋をしよう",
+      "nameZh": "来恋爱吧",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 217,
+      "original": "恋愛サーキュレーション",
+      "nameJa": "恋愛サーキュレーション",
+      "nameZh": "恋爱循环",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [
+        "https://bangumi.tv/subject/3198"
+      ],
+      "evidenceURLs": [
+        "https://bangumi.tv/subject/3198"
+      ],
+      "confidence": 0.95,
+      "note": "中文音乐目录列出中文名《恋爱循环》；不据此补写演唱版本。",
+      "artist": ""
+    },
+    {
+      "index": 218,
+      "original": "夢のつぼみ",
+      "nameJa": "夢のつぼみ",
+      "nameZh": "梦之花蕾",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 219,
+      "original": "夢花火",
+      "nameJa": "夢花火",
+      "nameZh": "梦中烟花",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "evidenceURLs": [],
+      "confidence": 0.65,
+      "note": "参考译名，未核实为通行或官方中文名；原作者未提供，未唯一确认曲目身份。",
+      "artist": ""
+    },
+    {
+      "index": 220,
+      "original": "迷宫バタフライ",
+      "nameJa": "迷宮バタフライ",
+      "nameZh": "迷宫蝴蝶",
+      "aliases": [
+        "迷宫Butterfly"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.mizukinana.jp/blog/2011/10/post-1630.html"
+      ],
+      "note": "高；艺人官方文章核实宫字应为宮；中文为通行译名，非声称官方中文版。",
+      "artist": ""
+    },
+    {
+      "index": 221,
+      "original": "糸",
+      "nameJa": "糸",
+      "nameZh": "线",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；原表未提供歌手，同名曲无法唯一定位，按题名直译。",
+      "artist": ""
+    },
+    {
+      "index": 222,
+      "original": "明日への手紙",
+      "nameJa": "明日への手紙",
+      "nameZh": "致明天的信",
+      "aliases": [
+        "给明天的信"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 223,
+      "original": "命に嫌われている",
+      "nameJa": "命に嫌われている",
+      "nameZh": "被生命所厌恶",
+      "aliases": [
+        "被生命厌恶着",
+        "被生命所厌恶着"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名；保留原表日文标点。",
+      "artist": ""
+    },
+    {
+      "index": 224,
+      "original": "鳥の詩",
+      "nameJa": "鳥の詩",
+      "nameZh": "鸟之诗",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 225,
+      "original": "平行线",
+      "nameJa": "平行線",
+      "nameZh": "平行线",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [
+        "https://eveofficial.com/discography/heikousen.html",
+        "https://www.sayuri-official.com/discography/heikousen-normal/"
+      ],
+      "note": "高（日文题名）；Eve与さユり官方唱片页都使用平行線，故恢复日文字形；原表缺歌手，不能确定具体同名作品，不补写艺人。中文沿用用户原表。",
+      "artist": ""
+    },
+    {
+      "index": 226,
+      "original": "前前前世",
+      "nameJa": "前前前世",
+      "nameZh": "前前前世",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用原题。",
+      "artist": ""
+    },
+    {
+      "index": 227,
+      "original": "群青",
+      "nameJa": "群青",
+      "nameZh": "群青",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用汉字原题。",
+      "artist": ""
+    },
+    {
+      "index": 228,
+      "original": "散る散る満ちる",
+      "nameJa": "散る散る満ちる",
+      "nameZh": "凋零、凋零、满盈",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://www.sonymusic.co.jp/artist/rei/info/536739"
+      ],
+      "note": "中；参考直译，未验证统一中文译名；无歌手，不将同名/近名作品强行归属。",
+      "artist": ""
+    },
+    {
+      "index": 229,
+      "original": "深海少女",
+      "nameJa": "深海少女",
+      "nameZh": "深海少女",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用汉字原题。",
+      "artist": ""
+    },
+    {
+      "index": 230,
+      "original": "神っぽいな",
+      "nameJa": "神っぽいな",
+      "nameZh": "像神一样呐",
+      "aliases": [
+        "像神一样"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 231,
+      "original": "失恋ソング沢山聴いて 泣いてばかりの私はもう",
+      "nameJa": "失恋ソング沢山聴いて 泣いてばかりの私はもう",
+      "nameZh": "听了许多失恋歌曲，哭个不停的我已经……",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；按原题未完句作参考翻译，不冒充官方中文标题。",
+      "artist": ""
+    },
+    {
+      "index": 232,
+      "original": "食虫植物",
+      "nameJa": "食虫植物",
+      "nameZh": "食虫植物",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用汉字原题。",
+      "artist": ""
+    },
+    {
+      "index": 233,
+      "original": "瞬き",
+      "nameJa": "瞬き",
+      "nameZh": "眨眼",
+      "aliases": [
+        "瞬间"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，按题名直译。",
+      "artist": ""
+    },
+    {
+      "index": 234,
+      "original": "私、アイドル宣言",
+      "nameJa": "私、アイドル宣言",
+      "nameZh": "我的偶像宣言",
+      "aliases": [
+        "我，偶像宣言"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 235,
+      "original": "私へ",
+      "nameJa": "私へ",
+      "nameZh": "致我",
+      "aliases": [
+        "给自己"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，按题名直译。",
+      "artist": ""
+    },
+    {
+      "index": 236,
+      "original": "桃源恋歌",
+      "nameJa": "桃源恋歌",
+      "nameZh": "桃源恋歌",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用汉字原题。",
+      "artist": ""
+    },
+    {
+      "index": 237,
+      "original": "天ノ弱",
+      "nameJa": "天ノ弱",
+      "nameZh": "天之弱",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名；不将ノ字简单保留为中文。",
+      "artist": ""
+    },
+    {
+      "index": 238,
+      "original": "庭園にて。",
+      "nameJa": "庭園にて。",
+      "nameZh": "于庭园中。",
+      "aliases": [
+        "在庭园中。"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；原表未给歌手，保留句号并采用参考直译。",
+      "artist": ""
+    },
+    {
+      "index": 239,
+      "original": "痛みを",
+      "nameJa": "痛みを",
+      "nameZh": "痛楚",
+      "aliases": [
+        "痛苦"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://kaf.kamitsubaki.jp/discography/20201125/118/"
+      ],
+      "note": "高（核心词义）；原题含宾格助词を，中文显示采用名词参考译。官方专辑可核实同题曲名，不据此补写空白歌手。",
+      "artist": ""
+    },
+    {
+      "index": 240,
+      "original": "推し変なんて許さない",
+      "nameJa": "推し変なんて許さない",
+      "nameZh": "不许换推",
+      "aliases": [
+        "绝不允许换推"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；推し変指更换支持的偶像，中文参考译。",
+      "artist": ""
+    },
+    {
+      "index": 241,
+      "original": "妄想税",
+      "nameJa": "妄想税",
+      "nameZh": "妄想税",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文题名。",
+      "artist": ""
+    },
+    {
+      "index": 242,
+      "original": "忘れてください",
+      "nameJa": "忘れてください",
+      "nameZh": "请忘记吧",
+      "aliases": [
+        "请忘记"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，按题名直译。",
+      "artist": ""
+    },
+    {
+      "index": 243,
+      "original": "忘れ時の言の葉",
+      "nameJa": "忘れ時の言の葉",
+      "nameZh": "遗忘之时的言叶",
+      "aliases": [
+        "遗忘时的言叶"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 244,
+      "original": "聞こえますか",
+      "nameJa": "聞こえますか",
+      "nameZh": "听得见吗",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，按题名直译。",
+      "artist": ""
+    },
+    {
+      "index": 245,
+      "original": "夏恋慕",
+      "nameJa": "夏恋慕",
+      "nameZh": "夏日恋慕",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；保留原题作检索别名，中文参考译。",
+      "artist": ""
+    },
+    {
+      "index": 246,
+      "original": "小さな恋のうた",
+      "nameJa": "小さな恋のうた",
+      "nameZh": "小小恋歌",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 247,
+      "original": "小小恋歌",
+      "nameJa": "小さな恋のうた",
+      "nameZh": "小小恋歌",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [
+        "https://www.mongol800.jp/25th/",
+        "https://www.universal-music.co.jp/jp/chiikoi/"
+      ],
+      "note": "高（日文题名）；中文小小恋歌通行对应小さな恋のうた，艺人官方周年页面及发行方页面核实日文原题。原表缺歌手，不指定翻唱版本；保留条目，不与246合并。",
+      "artist": ""
+    },
+    {
+      "index": 248,
+      "original": "小夜子",
+      "nameJa": "小夜子",
+      "nameZh": "小夜子",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；人名沿用原题。",
+      "artist": ""
+    },
+    {
+      "index": 249,
+      "original": "心拍数#0822",
+      "nameJa": "心拍数#0822",
+      "nameZh": "心率#0822",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 250,
+      "original": "心做し",
+      "nameJa": "心做し",
+      "nameZh": "心理作用",
+      "aliases": [
+        "无心"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；心理作用与无心均为通行中文称法，后者为惯用别名。",
+      "artist": ""
+    },
+    {
+      "index": 251,
+      "original": "星屑ビーナス",
+      "nameJa": "星屑ビーナス",
+      "nameZh": "星尘维纳斯",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 252,
+      "original": "噓月",
+      "nameJa": "噓月",
+      "nameZh": "谎月",
+      "aliases": [
+        "嘘月"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名；保留原表噓字异体。",
+      "artist": ""
+    },
+    {
+      "index": 253,
+      "original": "眩しいDNAだけ",
+      "nameJa": "眩しいDNAだけ",
+      "nameZh": "只有耀眼的DNA",
+      "aliases": [
+        "唯有耀眼的DNA"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://zutomayo.net/news/84/"
+      ],
+      "note": "高（词义）；官方页面核实日文曲名，中文为参考翻译。",
+      "artist": ""
+    },
+    {
+      "index": 254,
+      "original": "言って。",
+      "nameJa": "言って。",
+      "nameZh": "说吧。",
+      "aliases": [
+        "说啊。",
+        "说吧"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名，保留原题句号。",
+      "artist": ""
+    },
+    {
+      "index": 255,
+      "original": "夜に駆ける",
+      "nameJa": "夜に駆ける",
+      "nameZh": "向夜晚奔去",
+      "aliases": [
+        "夜驱"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 256,
+      "original": "夜の歌",
+      "nameJa": "夜の歌",
+      "nameZh": "夜之歌",
+      "aliases": [
+        "夜的歌"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；同名作品较多且原表无歌手，不指认特定版本。",
+      "artist": ""
+    },
+    {
+      "index": 257,
+      "original": "銀色飛行船",
+      "nameJa": "銀色飛行船",
+      "nameZh": "银色飞行船",
+      "aliases": [
+        "银色飞艇"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://moegirl.icu/银色飞行船"
+      ],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 258,
+      "original": "踊り子",
+      "nameJa": "踊り子",
+      "nameZh": "舞女",
+      "aliases": [
+        "舞者",
+        "踊子"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，不锁定同名歌曲，使用参考译。",
+      "artist": ""
+    },
+    {
+      "index": 259,
+      "original": "優しい恋人",
+      "nameJa": "優しい恋人",
+      "nameZh": "温柔的恋人",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；未验证统一中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 260,
+      "original": "雨に唄えば",
+      "nameJa": "雨に唄えば",
+      "nameZh": "雨中欢唱",
+      "aliases": [
+        "在雨中歌唱"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，同名曲较多，使用参考译。",
+      "artist": ""
+    },
+    {
+      "index": 261,
+      "original": "約束",
+      "nameJa": "約束",
+      "nameZh": "约定",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；无歌手，同名曲较多，使用参考译。",
+      "artist": ""
+    },
+    {
+      "index": 262,
+      "original": "酔いどれ知らず",
+      "nameJa": "酔いどれ知らず",
+      "nameZh": "不知醉",
+      "aliases": [
+        "不知醉酒"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": ""
+    },
+    {
+      "index": 263,
+      "original": "Dear Mr 「F」",
+      "nameJa": "Dear Mr 「F」",
+      "nameZh": "亲爱的F先生",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；中文参考译，日文/英文原题保持原表格式。",
+      "artist": "ずっと真夜中でいいのに"
+    },
+    {
+      "index": 264,
+      "original": "アンサー",
+      "nameJa": "アンサー",
+      "nameZh": "答案",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://kaf.kamitsubaki.jp/discography/20201125/118/"
+      ],
+      "note": "高（词义）；花譜官方专辑核实日文题名，中文参考译。",
+      "artist": "花谱"
+    },
+    {
+      "index": 265,
+      "original": "まほう",
+      "nameJa": "まほう",
+      "nameZh": "魔法",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [
+        "https://kaf.kamitsubaki.jp/discography/20201125/118/"
+      ],
+      "note": "高（词义）；花譜官方专辑包含まほう feat.理芽，原表未列合作后缀，因此不擅自增补。",
+      "artist": "花谱"
+    },
+    {
+      "index": 266,
+      "original": "Alice",
+      "nameJa": "Alice",
+      "nameZh": "爱丽丝",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（名字音译）；沿用原表理一信息，不擅改为理芽或其他艺人。",
+      "artist": "理一"
+    },
+    {
+      "index": 267,
+      "original": "ソラゴト",
+      "nameJa": "ソラゴト",
+      "nameZh": "空言",
+      "aliases": [
+        "谎言"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://kamitsubaki.jp/discography/asu/2266/"
+      ],
+      "note": "中高；ソラゴト为虚言/空言，官方作品页核实明透曲名，中文参考译。",
+      "artist": "明透"
+    },
+    {
+      "index": 268,
+      "original": "ライバー",
+      "nameJa": "ライバー",
+      "nameZh": "莱巴（音译）",
+      "aliases": [
+        "莱巴",
+        "赖巴"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://friendship.mu/en/release/%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BC/"
+      ],
+      "note": "低（题名含义）；发行方可核实日向文同名曲，但未找到创作者对ライバー含义的说明。暂按日语常见词义参考译，不声称正式译名；建议人工确认。；未找到可靠通用中文名或作者释义，避免误译为直播者，暂采用明确标注的音译。",
+      "artist": "日向文"
+    },
+    {
+      "index": 269,
+      "original": "落下(いっぱつにゅうこんver.)",
+      "nameJa": "落下(いっぱつにゅうこんver.)",
+      "nameZh": "坠落（一发入魂版）",
+      "aliases": [
+        "落下（一发入魂版）"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；完整保留原表日文版本括号，中文参考译。",
+      "artist": "日向文"
+    },
+    {
+      "index": 270,
+      "original": "秘密",
+      "nameJa": "秘密",
+      "nameZh": "秘密",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用汉字原题。",
+      "artist": "日向文"
+    },
+    {
+      "index": 271,
+      "original": "錆び",
+      "nameJa": "錆び",
+      "nameZh": "锈",
+      "aliases": [
+        "锈蚀"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；中文参考译。",
+      "artist": "日向文"
+    },
+    {
+      "index": 272,
+      "original": "煙草と共犯者",
+      "nameJa": "煙草と共犯者",
+      "nameZh": "香烟与共犯",
+      "aliases": [
+        "烟草与共犯者"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义）；中文参考译。",
+      "artist": "日向文"
+    },
+    {
+      "index": 273,
+      "original": "世界",
+      "nameJa": "世界",
+      "nameZh": "世界",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；中文沿用汉字原题。",
+      "artist": "森惠"
+    },
+    {
+      "index": 274,
+      "original": "beautiful world",
+      "nameJa": "beautiful world",
+      "nameZh": "美丽世界",
+      "aliases": [
+        "美丽的世界"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名；原文大小写依原表保留。",
+      "artist": "宇多田光"
+    },
+    {
+      "index": 275,
+      "original": "first love",
+      "nameJa": "first love",
+      "nameZh": "初恋",
+      "aliases": [],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名；原文大小写依原表保留。",
+      "artist": "宇多田光"
+    },
+    {
+      "index": 276,
+      "original": "君に夢中",
+      "nameJa": "君に夢中",
+      "nameZh": "为你着迷",
+      "aliases": [
+        "迷恋你"
+      ],
+      "translationType": "common",
+      "sources": [],
+      "note": "高；通行中文译名。",
+      "artist": "宇多田光"
+    },
+    {
+      "index": 280,
+      "original": "会いたい",
+      "nameJa": "会いたい",
+      "nameZh": "想见你",
+      "aliases": [],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义），低（具体作品归属）；会いたい有多首同名曲，原表缺歌手，因此仅提供参考直译，不推定为もさを。等版本。",
+      "artist": ""
+    },
+    {
+      "index": 282,
+      "original": "終着",
+      "nameJa": "終着",
+      "nameZh": "终点",
+      "aliases": [
+        "终着"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://www.youtube.com/watch?v=9lSSgvReik8"
+      ],
+      "note": "高（词义），中（具体作品归属）；已查到rinri官方同题曲，但原表无歌手，不能据此唯一确认；中文采用参考译。",
+      "artist": ""
+    },
+    {
+      "index": 284,
+      "original": "まどろみ",
+      "nameJa": "まどろみ",
+      "nameZh": "小憩",
+      "aliases": [
+        "浅眠",
+        "微睡"
+      ],
+      "translationType": "reference",
+      "sources": [],
+      "note": "高（词义），低（具体作品归属）；まどろみ有多个同名作品，原表缺歌手，按词义参考译。",
+      "artist": ""
+    },
+    {
+      "index": 285,
+      "original": "月灯りふんわり落ちてくる夜 (月光轻轻落下的夜晚)",
+      "nameJa": "月灯りふんわり落ちてくる夜",
+      "nameZh": "月光轻轻落下的夜晚",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [],
+      "note": "高；直接保留用户原表括号中的中文译名，只从日文显示名移除中文注释。",
+      "artist": ""
+    },
+    {
+      "index": 286,
+      "original": "ヰ世界の宝石譚 (异世界宝石谭)",
+      "nameJa": "ヰ世界の宝石譚",
+      "nameZh": "异世界宝石谭",
+      "aliases": [],
+      "translationType": "provided",
+      "sources": [
+        "https://www.youtube.com/watch?v=n655J-nqBns"
+      ],
+      "note": "高；保留用户提供译名；官方演出视频核实ヰ世界及譚的写法。",
+      "artist": ""
+    },
+    {
+      "index": 287,
+      "original": "ワールドイズマイン (かぐや&月見ヤチヨ ver.)",
+      "nameJa": "ワールドイズマイン (かぐや&月見ヤチヨ ver.)",
+      "nameZh": "世界第一的公主殿下（かぐや＆月見ヤチヨ版）",
+      "aliases": [
+        "世界属于我（かぐや＆月見ヤチヨ版）",
+        "World Is Mine"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000095.000032680.html"
+      ],
+      "note": "高；主标题采用通行中文译名；版本括号属于真实版本信息，完整保留在日文名中。官方发布全题另含CPK! Remix，本表不擅自增字；角色名保留日文以免未经核实的汉字转写。",
+      "artist": ""
+    },
+    {
+      "index": 288,
+      "original": "For フルーツバスケット (水果篮子)",
+      "nameJa": "For フルーツバスケット",
+      "nameZh": "水果篮子",
+      "aliases": [
+        "献给水果篮子",
+        "For Fruits Basket",
+        "水果篮子主题曲"
+      ],
+      "translationType": "provided",
+      "sources": [
+        "https://king-cr.jp/special/fruba/press/press_vol2.html"
+      ],
+      "note": "高；采用用户原表中文注释；只移除中文注释，保留日文原题中For。官方动画发行方页面可核实标题。",
+      "artist": ""
+    },
+    {
+      "index": 291,
+      "original": "オラシオン",
+      "nameJa": "オラシオン",
+      "nameZh": "祈祷",
+      "aliases": [
+        "祈愿"
+      ],
+      "translationType": "reference",
+      "sources": [
+        "https://ngnl.jp/tv/goods/music.html"
+      ],
+      "note": "高（词义）；oración含祈祷义。动画官方页核实存在オラシオン同题曲，原表未列艺人，故不据此认定具体版本；中文为参考译。",
+      "artist": ""
+    },
+    {
+      "index": 292,
+      "original": "夏霞",
+      "nameJa": "夏霞",
+      "nameZh": "夏霞",
+      "aliases": [
+        "夏日薄雾"
+      ],
+      "translationType": "common",
+      "sources": [
+        "https://www.bilibili.com/video/BV1L9weeQEid/",
+        "https://www.youtube.com/watch?v=6rOy6zi8Rao"
+      ],
+      "note": "高；あたらよ官方中文账号以夏霞发布MV，显示名保留该题名；霞指薄雾，非强行译成晚霞。",
+      "artist": ""
+    }
+  ]
+}
