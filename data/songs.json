@@ -48,7 +48,7 @@
     {
       "name": "春の風",
       "artist": "",
-      "lang": "国语",
+      "lang": "日语",
       "sc": "免费",
       "tags": [],
       "cut": "",
@@ -2842,6 +2842,15 @@
       "cut": "",
       "note": "",
       "nameZh": "夏霞"
+    },
+    {
+      "name": "Always Online",
+      "artist": "林俊杰",
+      "lang": "国语",
+      "sc": "免费",
+      "tags": [],
+      "cut": "",
+      "note": ""
     }
   ]
 }
